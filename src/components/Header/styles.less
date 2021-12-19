@@ -1,0 +1,43 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 20px 20px;
+  & .link {
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    .line {
+      width: 0;
+      position: absolute;
+      height: 2px;
+      background-color: var(--yellow);
+      display: block;
+      z-index: 10;
+      left: 15%;
+      bottom: -5px;
+      transition: all 0.25s ease-in-out;
+    }
+    &:hover {
+      .line {
+        width: 70%;
+      }
+    }
+  }
+  .active {
+    font-weight: 600;
+    display: block;
+    position: relative;
+    .line {
+      position: absolute;
+      bottom: -5px;
+      width: 70%;
+      height: 2px;
+      background-color: var(--yellow);
+      display: block;
+      z-index: 10;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
