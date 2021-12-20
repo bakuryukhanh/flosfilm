@@ -1,3 +1,4 @@
+import FilmCard from '@/components/FilmCard';
 import { StarFilled } from '@ant-design/icons/lib/icons';
 import { Rate, Space, Typography, Row, Col } from 'antd';
 import { Carousel } from 'react-responsive-carousel';
@@ -16,6 +17,8 @@ const fakeDataCarousel = [
       'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
     thumbImage:
       'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
+    view: '2k',
+    percent: 30,
   },
   {
     vnName: 'Hiệp sĩ xanh',
@@ -29,6 +32,8 @@ const fakeDataCarousel = [
       'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
     thumbImage:
       'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
+    view: '5k',
+    percent: 50,
   },
 ];
 
@@ -77,6 +82,7 @@ const customIndicators = (
       <li
         style={{
           backgroundImage: `url(${fakeDataCarousel[index].thumbImage})`,
+          transform: 'scale(1.2)',
         }}
         className={styles.indicator}
         aria-label={`Selected: ${label} ${index + 1}`}
@@ -113,6 +119,38 @@ const HomePage = (_props) => {
           return <CarouselCard {...item} />;
         })}
       </Carousel>
+      <div className={styles['film-section']}>
+        <Row align="middle" justify="space-between">
+          <Col>
+            <Typography.Title level={2}>Tiếp tục xem</Typography.Title>
+          </Col>
+          <Col>
+            <Typography.Title level={4} style={{ color: 'var(--yellow)' }}>
+              Xem thêm
+            </Typography.Title>
+          </Col>
+        </Row>
+        <Row gutter={[10, 10]}>
+          <Col span={16}>
+            <FilmCard
+              {...fakeDataCarousel[1]}
+              style={{ aspectRatio: 'unset' }}
+            />
+          </Col>
+          <Col span={8}>
+            <FilmCard {...fakeDataCarousel[1]} />
+          </Col>
+          <Col span={8}>
+            <FilmCard {...fakeDataCarousel[1]} />
+          </Col>
+          <Col span={8}>
+            <FilmCard {...fakeDataCarousel[1]} />
+          </Col>
+          <Col span={8}>
+            <FilmCard {...fakeDataCarousel[1]} />
+          </Col>
+        </Row>
+      </div>
     </div>
   );
 };
