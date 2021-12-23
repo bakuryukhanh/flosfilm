@@ -3,8 +3,10 @@ import { Col, Avatar, Input, Row, Typography } from 'antd';
 import { Link, NavLink } from 'umi';
 import styles from './styles.less';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { useState } from 'react';
 
 export default function Header(props) {
+  const [isLogin, setIsLogin] = useState(false);
   return (
     <div className={styles.header}>
       <div className="container">
@@ -66,14 +68,25 @@ export default function Header(props) {
             />
           </Col>
           <Col>
-            <Row gutter={[20, 0]} align="middle" justify="end">
-              <Col span={8}>
-                <Avatar icon={<UserOutlined />} size={32} />
-              </Col>
-              <Col span={16} style={{ textAlign: 'right' }}>
-                <Typography.Text strong>Văn Khánh</Typography.Text>
-              </Col>
-            </Row>
+            {isLogin ? (
+              <Row gutter={[20, 0]} align="middle" justify="end">
+                <Col span={8}>
+                  <Avatar icon={<UserOutlined />} size={32} />
+                </Col>
+                <Col span={16} style={{ textAlign: 'right' }}>
+                  <Typography.Text strong>Văn Khánh</Typography.Text>
+                </Col>
+              </Row>
+            ) : (
+              <Link to="/authentication">
+                <Typography.Title
+                  level={5}
+                  style={{ margin: '0px', color: 'var(--yellow)' }}
+                >
+                  Đăng nhập
+                </Typography.Title>
+              </Link>
+            )}
           </Col>
         </Row>
       </div>

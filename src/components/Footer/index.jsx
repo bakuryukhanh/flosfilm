@@ -63,7 +63,7 @@ export default function Footer(props) {
               <Typography.Text>Chính sách sở hữu trí tuệ</Typography.Text>
             </Col>
             <Col span={6}>
-              <Typography.Title level={5}>Thoong tin</Typography.Title>
+              <Typography.Title level={5}>Thông tin</Typography.Title>
               <br />
               <Typography.Text>Về chúng tôi</Typography.Text>
               <br />
