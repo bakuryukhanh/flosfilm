@@ -8,18 +8,11 @@ const FloatLabel = (props) => {
 
   const labelClass =
     focus || (input && input.length !== 0) ? 'label label-float' : 'label';
-  const labelSize = focus || (input && input.length !== 0) ? '10px' : '14px';
 
   return (
-    <div
-      className="float-label"
-      onBlur={() => setFocus(false)}
-      onFocus={() => setFocus(true)}
-    >
+    <div className="float-label" onFocus={() => setFocus(true)}>
       {children}
-      <label className={labelClass} style={{ fontSize: labelSize }}>
-        {label}
-      </label>
+      <label className={labelClass}>{focus && label}</label>
     </div>
   );
 };

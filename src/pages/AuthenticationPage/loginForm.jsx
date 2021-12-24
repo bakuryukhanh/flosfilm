@@ -21,47 +21,45 @@ const LoginForm = () => {
       }}
       onFinish={onFinish}
     >
-      <Form.Item
-        name="emailOrPhoneItem"
-        rules={[
-          {
-            required: true,
-            message: 'Vui lòng nhập email hoặc số điện thoại của bạn!',
-          },
-        ]}
+      <FloatLabel
+        label="Tên tài khoản"
+        name="emailOrPhone"
+        input={emailOrPhone}
       >
-        <FloatLabel
-          label="Nhập email hoặc số điện thoại của bạn"
-          name="emailOrPhone"
-          input={emailOrPhone}
+        <Form.Item
+          name="emailOrPhoneItem"
+          rules={[
+            {
+              required: true,
+              message: 'Vui lòng nhập email hoặc số điện thoại của bạn!',
+            },
+          ]}
         >
           <Input
             value={emailOrPhone}
             onChange={(e) => setEmailOrPhone(e.target.value)}
+            placeholder="Email hoặc số điện thoại"
           />
-        </FloatLabel>
-      </Form.Item>
-      <Form.Item
-        name="passwordItem"
-        rules={[
-          {
-            required: true,
-            message: 'Vui lòng nhập mật khẩu của bạn!',
-          },
-        ]}
-      >
-        <FloatLabel
-          label="Nhập mật khẩu của bạn"
-          name="password"
-          input={password}
+        </Form.Item>
+      </FloatLabel>
+      <FloatLabel label="Mật khẩu" name="password" input={password}>
+        <Form.Item
+          name="passwordItem"
+          rules={[
+            {
+              required: true,
+              message: 'Vui lòng nhập mật khẩu của bạn!',
+            },
+          ]}
         >
           <Input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            placeholder="Mật khẩu"
           />
-        </FloatLabel>
-      </Form.Item>
+        </Form.Item>
+      </FloatLabel>
       <Form.Item>
         <Row justify="space-between">
           <Form.Item name="remember" valuePropName="checked" noStyle>

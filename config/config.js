@@ -9,6 +9,7 @@ export default defineConfig({
     '@heading-color': 'white',
     '@border-radius-base': '5px',
     '@component-background': '#525252',
+    '@input-bg': 'transparent',
   },
   routes: routes,
   fastRefresh: {},
