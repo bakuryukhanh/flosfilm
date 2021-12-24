@@ -42,10 +42,11 @@ const CarouselCard = (props) => {
   const { vnName, enName, description, type, time, rate, image } = props;
   console.log(history);
   return (
-    <div
-      className={styles['carousel-card']}
-      style={{ background: `url(${image})` }}
-    >
+    <div className={styles['carousel-card']}>
+      <div
+        className={styles.background}
+        style={{ backgroundImage: `url(${image})` }}
+      />
       <Row>
         <Col span={16} />
         <Col span={8} style={{ textAlign: 'left' }}>
