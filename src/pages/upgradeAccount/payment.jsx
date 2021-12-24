@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Typography, Modal, notification } from 'antd';
+import { Typography, Modal, notification, Input, Button } from 'antd';
 import styles from './payment.less';
 import PaymentSteps from '../../components/paymentSteps/index';
 import QrCodeScannerIcon from '@mui/icons-material/QrCodeScanner';
@@ -32,7 +32,7 @@ export default function Payment(props) {
     }
   };
   return (
-    <div className={styles['container']}>
+    <div className={styles['container']} style={{ marginTop: '70px' }}>
       <Typography.Text className={styles.title}>Thanh toán</Typography.Text>
       <PaymentSteps currenStep={1} />
       <div style={{ display: 'flex' }}>
@@ -104,6 +104,8 @@ export default function Payment(props) {
                   maxWidth: '120px',
                   color: 'black',
                   padding: '2px 4px 2px 4px',
+                  border: 'none',
+                  textAlign: 'right',
                 }}
                 value={coupon}
                 onChange={enterCoupon}
@@ -263,43 +265,45 @@ const VisaContent = ({ nMonth, packageID }) => {
   };
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
-      <text>Số thẻ</text>
-      <input
-        type={'number'}
+      <text style={{ marginBottom: '5px', fontWeight: 'bold' }}>Số thẻ</text>
+      <Input
         value={number}
         onChange={changeNumber}
         placeholder="Nhập số in trên thẻ"
         style={inputStyle}
       />
       <text style={errorMsg}>{numberErr}</text>
-      <text>Tên in trên thẻ</text>
-      <input
-        type={'text'}
+      <text style={{ marginBottom: '5px', fontWeight: 'bold' }}>
+        Tên in trên thẻ
+      </text>
+      <Input
         value={name}
         onChange={changeName}
         placeholder="Nhập tên in trên thẻ"
         style={inputStyle}
       />
       <text style={errorMsg}>{nameErr}</text>
-      <text>Ngày hết hạn</text>
-      <input
-        type={'number'}
+      <text style={{ marginBottom: '5px', fontWeight: 'bold' }}>
+        Ngày hết hạn
+      </text>
+      <Input
         value={expireDate}
         onChange={changeExpireDate}
         placeholder="MM/YY"
         style={inputStyle}
       />
       <text style={errorMsg}>{expireDateErr}</text>
-      <text>CVV/CVC2</text>
-      <input
-        type={'number'}
+      <Typography.Text style={{ marginBottom: '5px', fontWeight: 'bold' }}>
+        CVV/CVC2
+      </Typography.Text>
+      <Input
         value={cw}
         onChange={changeCw}
         placeholder="Nhập mã số bảo mật"
         style={inputStyle}
       />
       <text style={errorMsg}>{cwErr}</text>
-      <button
+      <Button
         onClick={pay}
         style={{
           marginTop: '20px',
@@ -311,10 +315,11 @@ const VisaContent = ({ nMonth, packageID }) => {
           fontWeight: 'bold',
           fontSize: '20px',
           textA: 'center',
+          height: 'max-content',
         }}
       >
         Thanh toán
-      </button>
+      </Button>
     </div>
   );
 };
@@ -475,7 +480,8 @@ const inputStyle = {
   color: 'black',
   borderRadius: '6px',
   maxWidth: '400px',
-  padding: '4px 6px 4px 6px',
+  padding: '5px 10px',
+  backgroundColor: 'white',
 };
 
 const methodData = [

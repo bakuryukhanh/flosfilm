@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Typography } from 'antd';
+import { Button, Typography } from 'antd';
 // import { SpeedIcon, DevicesIcon, VideoSettingsIcon, LooksOneIcon, CancelPresentationIcon } from '@mui/icons-material';
 import { Link } from 'umi';
 import CancelPresentationIcon from '@mui/icons-material/CancelPresentation';
@@ -25,7 +25,7 @@ export default function ChoosePackage(_props) {
     return (
       <div
         className={styles['packageContainer']}
-        style={{ backgroundColor: backgroundColor }}
+        style={{ backgroundColor: backgroundColor, marginTop: '70px' }}
         onClick={choose}
       >
         <Typography.Text
@@ -94,7 +94,7 @@ export default function ChoosePackage(_props) {
     );
   };
   return (
-    <div className={styles['container']}>
+    <div className={styles['container']} style={{ marginTop: '70px' }}>
       <Typography.Text className={styles.title}>
         Chọn gói phù hợp với bạn
       </Typography.Text>
@@ -105,21 +105,20 @@ export default function ChoosePackage(_props) {
         <Package data={listPackage[2]} />
       </div>
       <Link to={`/payment/${choosenID}`} style={{ alignSelf: 'center' }}>
-        <button
+        <Button
           style={{
             backgroundColor: '#FED52F',
-            minWidth: '300px',
-            padding: '13px',
-            borderRadius: '9px',
+            minWidth: '250px',
             fontSize: '26px',
             fontWeight: 'bolder',
             color: 'black',
-            margin: '20px',
+            marginTop: '20px',
+            height: 'max-content',
           }}
           onClick={toPayment}
         >
           Thanh toán
-        </button>
+        </Button>
       </Link>
     </div>
   );

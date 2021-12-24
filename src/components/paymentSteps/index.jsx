@@ -9,19 +9,20 @@ export default function PaymentProgress({ currenStep }) {
       current={currenStep}
       className={styles.paymentSteps}
       labelPlacement="vertical"
+      progressDot
       style={{
         width: '69%',
         alignSelf: 'center',
         marginBottom: '20px',
-        backgroundColor: '#6c5ce7',
         padding: '13px',
         borderRadius: '9px',
         paddingBottom: '6px',
+        background: 'transparent',
       }}
     >
-      <Step title="Chọn gói" style={{ color: 'black' }} />
-      <Step title="Thanh toán" style={{ color: 'black' }} />
-      <Step title="Hoàn tất" style={{ color: 'white' }} />
+      <Step title="Chọn gói" />
+      <Step title="Thanh toán" />
+      <Step title="Hoàn tất" />
     </Steps>
   );
 }

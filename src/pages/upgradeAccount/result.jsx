@@ -15,7 +15,12 @@ export default function Result(props) {
   const output = new Date(expireDate);
   return (
     <div
-      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        marginTop: '70px',
+      }}
     >
       <Typography.Text
         style={{ margin: '20px', fontWeight: 'bold', fontSize: '36px' }}
