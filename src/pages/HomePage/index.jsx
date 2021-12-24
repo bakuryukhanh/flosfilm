@@ -3,6 +3,7 @@ import { StarFilled } from '@ant-design/icons/lib/icons';
 import { Rate, Space, Typography, Row, Col } from 'antd';
 import { Carousel } from 'react-responsive-carousel';
 import styles from './styles.less';
+import { history } from 'umi';
 
 const fakeDataCarousel = [
   {
@@ -39,6 +40,7 @@ const fakeDataCarousel = [
 
 const CarouselCard = (props) => {
   const { vnName, enName, description, type, time, rate, image } = props;
+  console.log(history);
   return (
     <div
       className={styles['carousel-card']}
@@ -130,7 +132,7 @@ const HomePage = (_props) => {
             </Typography.Title>
           </Col>
         </Row>
-        <Row gutter={[10, 10]}>
+        <Row gutter={[30, 30]}>
           <Col span={16}>
             <FilmCard
               {...fakeDataCarousel[1]}
