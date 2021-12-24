@@ -8,7 +8,18 @@ export default [
     component: '@/layouts/BasicLayout',
     routes: [
       { path: '/', component: '@/pages/HomePage/index' },
-      { path: '/router/:id', component: '@/pages/test/$id' },
+      {
+        path: '/choosePackage',
+        component: '@/pages/upgradeAccount/choosePackage',
+      },
+      {
+        path: '/payment/:id',
+        component: '@/pages/upgradeAccount/payment',
+      },
+      {
+        path: '/result/:id/:nMonth',
+        component: '@/pages/upgradeAccount/result',
+      },
     ],
   },
 ];
