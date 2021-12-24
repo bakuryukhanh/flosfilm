@@ -1,28 +1,33 @@
 {
   "users": [
     {
-      "username": "haihango",
+      "userEmail": "haihango@gmail.com",
+      "userName": "Ngô Hải Hà",
       "userId": "1",
+      "userPassword": "123456"
+    },
+    {
+      "userEmail": "thanhduc@gmail.com",
+      "userName": "Huỳnh Thanh Đức",
+      "userId": "2",
       "password": "123456"
     },
     {
-      "username": "datquadep",
-      "userId": "1",
+      "userEmail": "sonicduc@gmail.com",
+      "userName": "Phạm Anh Đức",
+      "userId": "3",
       "password": "123456"
     },
     {
-      "username": "sonicduc",
-      "userId": "1",
+      "userEmail": "khang@gmail.com",
+      "userName": "Nguyễn Tấn Khang",
+      "userId": "4",
       "password": "123456"
     },
     {
-      "username": "user",
-      "userId": "1",
-      "password": "123456"
-    },
-    {
-      "username": "account123",
-      "userId": "1",
+      "userEmail": "khanh@gmail.com",
+      "userName": "Trần Văn Khánh",
+      "userId": "5",
       "password": "123456"
     }
   ],
