@@ -3,7 +3,17 @@ import { Card, Progress, Space, Tag, Typography } from 'antd';
 import styles from './styles.less';
 
 const FilmCard = (props) => {
-  const { name, image, time, view, type, percent, style } = props;
+  const {
+    vnName,
+    enName,
+    image,
+    time,
+    view,
+    type,
+    percent,
+    style,
+    filmCardType,
+  } = props;
   console.log({ backgroundImage: `url(${image})`, ...style });
   return (
     <div
@@ -29,12 +39,16 @@ const FilmCard = (props) => {
           <EyeOutlined />
           &nbsp; {view} lượt xem
         </Typography.Text>
-        <Typography.Title level={4}>{name}</Typography.Title>
-        <Progress
-          percent={percent}
-          showInfo={false}
-          strokeColor="var(--yellow)"
-        />
+        <Typography.Title level={4}>
+          {vnName ? vnName : enName}
+        </Typography.Title>
+        {filmCardType !== 'relevantFilm' && (
+          <Progress
+            percent={percent}
+            showInfo={false}
+            strokeColor="var(--yellow)"
+          />
+        )}
       </div>
     </div>
   );

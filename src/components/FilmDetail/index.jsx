@@ -97,6 +97,7 @@ export default function FilmDetail({
   rate,
   rateTime,
   castList,
+  directerList,
 }) {
   return (
     <div>
@@ -106,7 +107,13 @@ export default function FilmDetail({
       </Title>
       <Row gutter={[128]} style={{ padding: '1rem 0' }} justify="center">
         <Col>
-          <Tag style={{ backgroundColor: '#747474', borderRadius: 8 }}>
+          <Tag
+            style={{
+              backgroundColor: '#525252',
+              borderRadius: 8,
+              border: 'none',
+            }}
+          >
             {rate} <StarFilled style={{ color: 'var(--yellow)' }} />
           </Tag>
           <Text>({rateTime} lượt đánh giá)</Text>
@@ -117,43 +124,37 @@ export default function FilmDetail({
           </Text>
         </Col>
       </Row>
-      <div>
+      <div className={styles.detail}>
         <Text>
           <b>Nội dung: </b>
           {description}
         </Text>
       </div>
-      <div>
+      <div className={styles.detail}>
         <Text>
           <b>Thời lượng: </b>
           {time}
         </Text>
       </div>
-      <div>
-        <Text>
-          <b>Thời lượng: </b>
-          {time}
-        </Text>
-      </div>
-      <div>
+      <div className={styles.detail}>
         <Text>
           <b>Thể loại: </b>
           {type}
         </Text>
       </div>
-      <div>
+      <div className={styles.detail}>
         <Text>
           <b>Quốc gia: </b>
           {}
         </Text>
       </div>
-      <div>
+      <div className={styles.detail}>
         <Text>
           <b>Đạo diễn: </b>
-          {description}
+          {directerList[0].name}
         </Text>
       </div>
-      <div>
+      <div className={styles.detail}>
         <Text>
           <b>Diễn viên: </b>
         </Text>

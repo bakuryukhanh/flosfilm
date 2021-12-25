@@ -11,6 +11,7 @@ const Poster = ({ image }) => {
         textAlign: 'right',
         borderRadius: 10,
         marginBottom: 20,
+        border: '1px solid #747474',
       }}
     >
       <Tooltip title="Thêm vào danh sách yêu thích">
