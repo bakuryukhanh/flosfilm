@@ -1,12 +1,35 @@
 import { SearchOutlined, UserOutlined } from '@ant-design/icons/lib/icons';
-import { Col, Avatar, Input, Row, Typography } from 'antd';
+import { Col, Avatar, Input, Row, Typography, Menu, Dropdown } from 'antd';
 import { Link, NavLink } from 'umi';
 import styles from './styles.less';
+import './styles.less';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState } from 'react';
 
 export default function Header(props) {
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(
+    localStorage.getItem('isLogin') == 'true',
+  );
+  const userName = localStorage.getItem('userName');
+
+  function handleLogout() {
+    setIsLogin(false);
+    localStorage.setItem('isLogin', false);
+  }
+
+  const menu = (
+    <Menu>
+      <Menu.Item>
+        <Link to="/account">Cài đặt</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="/choosePackage">Nâng cấp tài khoản</Link>
+      </Menu.Item>
+      <Menu.Item onClick={handleLogout}>
+        <Link>Đăng xuất</Link>
+      </Menu.Item>
+    </Menu>
+  );
   return (
     <div className={styles.header}>
       <div className="container">
@@ -69,14 +92,16 @@ export default function Header(props) {
           </Col>
           <Col>
             {isLogin ? (
-              <Row gutter={[20, 0]} align="middle" justify="end">
-                <Col span={8}>
-                  <Avatar icon={<UserOutlined />} size={32} />
-                </Col>
-                <Col span={16} style={{ textAlign: 'right' }}>
-                  <Typography.Text strong>Văn Khánh</Typography.Text>
-                </Col>
-              </Row>
+              <Dropdown overlay={menu} placement="bottomRight" arrow>
+                <Row gutter={[20, 0]} align="middle" justify="end">
+                  <Col span={8}>
+                    <Avatar icon={<UserOutlined />} size={32} />
+                  </Col>
+                  <Col span={16} style={{ textAlign: 'right' }}>
+                    <Typography.Text strong>{userName}</Typography.Text>
+                  </Col>
+                </Row>
+              </Dropdown>
             ) : (
               <Link to="/authentication">
                 <Typography.Title
