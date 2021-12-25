@@ -3,6 +3,7 @@ import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import FloatLabel from '@/components/FloatLabel';
 import { useState } from 'react';
 import './styles.less';
+import { history } from 'umi';
 
 const RegisterForm = () => {
   const [name, setName] = useState('');
@@ -11,6 +12,7 @@ const RegisterForm = () => {
 
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
+    history.push('/registerSuccess');
   };
 
   return (
@@ -22,58 +24,49 @@ const RegisterForm = () => {
       }}
       onFinish={onFinish}
     >
-      <Form.Item
-        name="nameItem"
-        rules={[
-          {
-            required: true,
-            message: 'Vui lòng nhập tên của bạn!',
-          },
-        ]}
-      >
-        <FloatLabel label="Nhập tên của bạn" name="name" input={name}>
+      <FloatLabel label="Họ và tên" name="name" input={name}>
+        <Form.Item
+          name="nameItem"
+          rules={[
+            {
+              required: true,
+              message: 'Vui lòng nhập tên của bạn!',
+            },
+          ]}
+        >
           <Input value={name} onChange={(e) => setName(e.target.value)} />
-        </FloatLabel>
-      </Form.Item>
-      <Form.Item
-        name="emailItem"
-        rules={[
-          {
-            required: true,
-            message: 'Vui lòng nhập email của bạn!',
-          },
-          {
-            required: true,
-            type: 'email',
-            message: 'Email bạn nhập không đúng, vui lòng nhập lại!',
-          },
-        ]}
-      >
-        <FloatLabel label="Nhập email của bạn" name="email" input={email}>
+        </Form.Item>
+      </FloatLabel>
+      <FloatLabel label="Email" name="email" input={email}>
+        <Form.Item
+          name="emailItem"
+          rules={[
+            {
+              required: true,
+              message: 'Vui lòng nhập email của bạn!',
+            },
+          ]}
+        >
           <Input value={email} onChange={(e) => setEmail(e.target.value)} />
-        </FloatLabel>
-      </Form.Item>
-      <Form.Item
-        name="passwordItem"
-        rules={[
-          {
-            required: true,
-            message: 'Vui lòng nhập mật khẩu của bạn!',
-          },
-        ]}
-      >
-        <FloatLabel
-          label="Nhập mật khẩu của bạn"
-          name="password"
-          input={password}
+        </Form.Item>
+      </FloatLabel>
+      <FloatLabel label="Mật khẩu" name="password" input={password}>
+        <Form.Item
+          name="passwordItem"
+          rules={[
+            {
+              required: true,
+              message: 'Vui lòng nhập mật khẩu của bạn!',
+            },
+          ]}
         >
           <Input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-        </FloatLabel>
-      </Form.Item>
+        </Form.Item>
+      </FloatLabel>
       <Form.Item>
         <Row justify="space-between">
           <Form.Item name="remember" valuePropName="checked" noStyle>

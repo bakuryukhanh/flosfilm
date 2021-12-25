@@ -4,6 +4,10 @@ export default [
     component: '@/pages/AuthenticationPage',
   },
   {
+    path: '/registerSuccess',
+    component: '@/pages/AuthenticationPage/registerSuccess',
+  },
+  {
     path: '/',
     component: '@/layouts/BasicLayout',
     routes: [

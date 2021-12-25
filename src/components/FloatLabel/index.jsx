@@ -1,18 +1,12 @@
-import { useState } from 'react';
-
 import './style.less';
 
 const FloatLabel = (props) => {
-  const [focus, setFocus] = useState(false);
-  const { children, label, input } = props;
-
-  const labelClass =
-    focus || (input && input.length !== 0) ? 'label label-float' : 'label';
+  const { children, label } = props;
 
   return (
-    <div className="float-label" onFocus={() => setFocus(true)}>
+    <div className="float-label">
       {children}
-      <label className={labelClass}>{focus && label}</label>
+      <label className="label label-float">{label}</label>
     </div>
   );
 };
