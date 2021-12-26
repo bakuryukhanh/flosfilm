@@ -1,4 +1,14 @@
-import { Row, Col, Button, Typography, Select, Rate, Input, List } from 'antd';
+import {
+  Row,
+  Col,
+  Button,
+  Typography,
+  Select,
+  Rate,
+  Input,
+  List,
+  Form,
+} from 'antd';
 import Poster from '@/components/Poster';
 import styles from './styles.less';
 import FilmDetail from '@/components/FilmDetail';
@@ -8,7 +18,7 @@ import { SendOutlined } from '@ant-design/icons';
 import Comment from '@/components/Comment';
 import FilmCard from '@/components/FilmCard';
 import { useParams, history } from 'umi';
-import { useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 const filmDetail = {
   vnName: 'Hiệp sĩ xanh',
@@ -90,7 +100,7 @@ const filmDetail = {
   ],
 };
 
-const data = [
+let data = [
   {
     avatar: 'https://joeschmoe.io/api/v1/random',
     username: 'Nguyễn Văn A',
@@ -100,51 +110,51 @@ const data = [
   },
   {
     avatar: 'https://joeschmoe.io/api/v1/random',
-    username: 'Nguyễn Văn A',
+    username: 'Nguyễn Văn B',
     content: 'Bộ phim quá xuất sắc',
     rate: 4,
     commentDate: '25/12/2021',
   },
   {
     avatar: 'https://joeschmoe.io/api/v1/random',
-    username: 'Nguyễn Văn A',
+    username: 'Nguyễn Văn C',
     content: 'Bộ phim quá xuất sắc',
-    rate: 3,
+    rate: 4,
     commentDate: '25/12/2021',
   },
   {
     avatar: 'https://joeschmoe.io/api/v1/random',
-    username: 'Nguyễn Văn A',
+    username: 'Nguyễn Văn D',
     content: 'Bộ phim quá xuất sắc',
-    rate: 2.5,
+    rate: 4.5,
     commentDate: '25/12/2021',
   },
   {
     avatar: 'https://joeschmoe.io/api/v1/random',
-    username: 'Nguyễn Văn A',
+    username: 'Nguyễn Văn E',
     content: 'Bộ phim quá xuất sắc',
     rate: 5,
     commentDate: '25/12/2021',
   },
   {
     avatar: 'https://joeschmoe.io/api/v1/random',
-    username: 'Nguyễn Văn A',
+    username: 'Nguyễn Văn F',
     content: 'Bộ phim quá xuất sắc',
     rate: 5,
     commentDate: '25/12/2021',
   },
   {
     avatar: 'https://joeschmoe.io/api/v1/random',
-    username: 'Nguyễn Văn A',
+    username: 'Nguyễn Văn G',
     content: 'Bộ phim quá xuất sắc',
-    rate: 3,
+    rate: 5,
     commentDate: '25/12/2021',
   },
   {
     avatar: 'https://joeschmoe.io/api/v1/random',
-    username: 'Nguyễn Văn A',
+    username: 'Nguyễn Văn H',
     content: 'Bộ phim quá xuất sắc',
-    rate: 0,
+    rate: 4.5,
     commentDate: '25/12/2021',
   },
 ];
@@ -183,11 +193,51 @@ const fakeDataCarousel = [
 ];
 
 export default function index() {
+  const val = localStorage.getItem('rate');
+  const localComments = localStorage.getItem('comments');
+  const [rate, setRate] = useState(val ? parseFloat(val) : 0);
+  const [comments, setComments] = useState(
+    localComments ? JSON.parse(localComments) : data,
+  );
   const params = useParams();
-  console.log(params);
+
   const handleRedirect = useCallback(() => {
     history.push(`/watch/${params.id}`);
   }, [history]);
+
+  const handleRate = useCallback(
+    (val) => {
+      setRate(val);
+      localStorage.setItem('rate', val);
+    },
+    [setRate],
+  );
+
+  const onFinish = (values) => {
+    const date = new Date();
+    const userName = localStorage.getItem('userName');
+    const data = {
+      avatar: 'https://joeschmoe.io/api/v1/random',
+      username: userName ? userName : 'Ẩn danh',
+      content: values.comment,
+      rate: rate,
+      commentDate:
+        (date.getDate() > 9 ? date.getDate() : '0' + date.getDate()) +
+        '/' +
+        (date.getMonth() > 8
+          ? date.getMonth() + 1
+          : '0' + (date.getMonth() + 1)) +
+        '/' +
+        date.getFullYear(),
+    };
+
+    const updatedComments = [...comments];
+    updatedComments.unshift(data);
+
+    setComments(updatedComments);
+
+    localStorage.setItem('comments', JSON.stringify(updatedComments));
+  };
 
   return (
     <>
@@ -244,37 +294,50 @@ export default function index() {
           <Col span={8} style={{ textAlign: 'center' }}>
             <Rate
               allowHalf
-              defaultValue={0}
-              onChange={(val) => console.log(val)}
+              defaultValue={rate}
+              onChange={(val) => handleRate(val)}
             />
           </Col>
           <Col span={8} style={{ textAlign: 'right' }}>
             <SortingSelection />
           </Col>
         </Row>
-        <Row align="middle" style={{ marginTop: 50 }}>
-          <Col span={3} style={{ textAlign: 'center' }}>
-            <Avatar
-              src="https://joeschmoe.io/api/v1/random"
-              className={styles.avatar}
-            />
-          </Col>
-          <Col span={19}>
-            <Input
-              placeholder="Nhập bình luận của bạn..."
-              className={styles['comment-input']}
-            />
-          </Col>
-          <Col span={2} style={{ textAlign: 'right' }}>
-            <Button
-              type="primary"
-              icon={<SendOutlined />}
-              className={styles['send-btn']}
-            />
-          </Col>
-        </Row>
+        <Form name="commentForm" onFinish={onFinish} wrapperCol={{ span: 16 }}>
+          <Row align="middle" style={{ marginTop: 50 }}>
+            <Col span={3} style={{ textAlign: 'center' }}>
+              <Avatar
+                src="https://joeschmoe.io/api/v1/random"
+                className={styles.avatar}
+              />
+            </Col>
+
+            <Col span={19} style={{ paddingTop: 24 }}>
+              <Form.Item
+                name="comment"
+                rules={[
+                  { required: true, message: 'Bạn chưa nhập bình luận!' },
+                ]}
+                wrapperCol={{ span: 28 }}
+              >
+                <Input
+                  placeholder="Nhập bình luận của bạn..."
+                  className={styles['comment-input']}
+                />
+              </Form.Item>
+            </Col>
+
+            <Col span={2} style={{ textAlign: 'right' }}>
+              <Button
+                type="primary"
+                icon={<SendOutlined />}
+                className={styles['send-btn']}
+                htmlType="submit"
+              />
+            </Col>
+          </Row>
+        </Form>
         <div style={{ overflow: 'auto', height: 680, margin: '2rem 6rem' }}>
-          {data.map((comment, index) => (
+          {comments?.map((comment, index) => (
             <Comment {...comment} key={index} />
           ))}
         </div>
