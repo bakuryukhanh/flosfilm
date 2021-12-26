@@ -5,9 +5,7 @@ import RegisterForm from './registerForm';
 import './styles.less';
 
 const { TabPane } = Tabs;
-function callback(key) {
-  console.log(key);
-}
+function callback(key) {}
 
 const AuthenticationPage = (prop) => {
   return (

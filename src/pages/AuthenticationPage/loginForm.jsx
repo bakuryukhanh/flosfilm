@@ -1,15 +1,33 @@
-import { Form, Input, Button, Checkbox, Row } from 'antd';
+import { Form, Input, Button, Checkbox, Row, message } from 'antd';
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import FloatLabel from '@/components/FloatLabel';
 import { useState } from 'react';
 import './styles.less';
+import { data } from '../../../mock/data.js';
+import { history } from 'umi';
 
 const LoginForm = () => {
   const [emailOrPhone, setEmailOrPhone] = useState('');
   const [password, setPassword] = useState('');
 
   const onFinish = (values) => {
-    console.log('Received values of form: ', values);
+    let isExist = false;
+    data.users.forEach((user) => {
+      if (user.userEmail === values.emailOrPhone) {
+        isExist = true;
+        if (user.userPassword === values.password) {
+          localStorage.setItem('userName', user.userName);
+          localStorage.setItem('isLogin', true);
+          history.push('/');
+        } else {
+          message.error('Mật khẩu sai vui lòng nhập lại');
+        }
+      }
+    });
+
+    if (!isExist) {
+      message.error('Tài khoản của bạn không tồn tại, vui lòng đăng ký');
+    }
   };
 
   return (
@@ -22,12 +40,12 @@ const LoginForm = () => {
       onFinish={onFinish}
     >
       <FloatLabel
-        label="Tên tài khoản"
-        name="emailOrPhone"
+        label="Email hoặc số điện thoại"
+        name="emailOrPhoneLabel"
         input={emailOrPhone}
       >
         <Form.Item
-          name="emailOrPhoneItem"
+          name="emailOrPhone"
           rules={[
             {
               required: true,
@@ -38,13 +56,12 @@ const LoginForm = () => {
           <Input
             value={emailOrPhone}
             onChange={(e) => setEmailOrPhone(e.target.value)}
-            placeholder="Email hoặc số điện thoại"
           />
         </Form.Item>
       </FloatLabel>
-      <FloatLabel label="Mật khẩu" name="password" input={password}>
+      <FloatLabel label="Mật khẩu" name="passwordLabel" input={password}>
         <Form.Item
-          name="passwordItem"
+          name="password"
           rules={[
             {
               required: true,
@@ -56,7 +73,6 @@ const LoginForm = () => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Mật khẩu"
           />
         </Form.Item>
       </FloatLabel>
