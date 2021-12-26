@@ -7,6 +7,8 @@ import Avatar from 'antd/lib/avatar/avatar';
 import { SendOutlined } from '@ant-design/icons';
 import Comment from '@/components/Comment';
 import FilmCard from '@/components/FilmCard';
+import { useParams, history } from 'umi';
+import { useCallback } from 'react';
 
 const filmDetail = {
   vnName: 'Hiệp sĩ xanh',
@@ -181,15 +183,30 @@ const fakeDataCarousel = [
 ];
 
 export default function index() {
+  const params = useParams();
+  console.log(params);
+  const handleRedirect = useCallback(() => {
+    history.push(`/watch/${params.id}`);
+  }, [history]);
+
   return (
     <>
       <div
         style={{
-          backgroundImage: `url(${filmDetail.image})`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100%',
+          position: 'relative',
         }}
       >
+        <div
+          style={{
+            position: 'absolute',
+            filter: 'blur(3px)',
+            inset: '0',
+            backgroundImage: `url(${filmDetail.image})`,
+            backgroundSize: 'cover',
+          }}
+        />
         <div className="container">
           <Row style={{ paddingTop: '8rem', paddingBottom: '2rem' }}>
             <Col span={6}>
@@ -198,7 +215,11 @@ export default function index() {
                   <Poster image={filmDetail.image} />
                 </Col>
                 <Col span={24}>
-                  <Button type="primary" className={styles['view-btn']}>
+                  <Button
+                    type="primary"
+                    className={styles['view-btn']}
+                    onClick={handleRedirect}
+                  >
                     Xem phim
                   </Button>
                 </Col>
