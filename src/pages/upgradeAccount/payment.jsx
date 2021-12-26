@@ -144,7 +144,7 @@ export default function Payment(props) {
                 style={{
                   fontSize: '24px',
                   fontWeight: 'bold',
-                  color: '#fdcb6e',
+                  color: '#fed530',
                 }}
               >
                 {formatAmount(packagePrice * nMonth - discount)}{' '}
@@ -310,7 +310,7 @@ const VisaContent = ({ nMonth, packageID }) => {
           padding: '6px 13px 6px 13px',
           maxWidth: '150px',
           borderRadius: '6px',
-          backgroundColor: '#fdcb6e',
+          backgroundColor: '#fed530',
           color: '#2d3436',
           fontWeight: 'bold',
           fontSize: '20px',
@@ -427,35 +427,32 @@ const ListMethod = ({ choosenID, setID }) => {
         flexWrap: 'wrap',
       }}
     >
-      <img
-        src={methodData[choosenID].imgSrc}
-        style={{
-          ...imgStyle,
-          width: 100,
-          height: 65,
-          marginLeft: '0px',
-          borderColor: '#ff7675',
-          borderWidth: '3px',
-          borderStyle: 'solid',
-        }}
-      />
-
-      <text style={{ fontWeight: 'bold', fontSize: 40, lineHeight: '50px' }}>
+      {/* <text style={{ fontWeight: 'bold', fontSize: 40, lineHeight: '50px' }}>
         /
-      </text>
-      {methodData
-        .filter((item) => item.id != choosenID)
-        .map((item) => (
-          <img
-            src={item.imgSrc}
-            style={imgStyle}
-            onClick={() => {
-              setID(item.id);
-            }}
-          />
-        ))}
+      </text> */}
+      {methodData.map((item) => (
+        <img
+          src={item.imgSrc}
+          style={item.id == choosenID ? choosenMethod : imgStyle}
+          onClick={() => {
+            setID(item.id);
+          }}
+        />
+      ))}
     </div>
   );
+};
+
+const choosenMethod = {
+  ...imgStyle,
+  width: 100,
+  height: 65,
+  marginLeft: '0px',
+  borderColor: '#ff7675',
+  borderWidth: '3px',
+  borderStyle: 'solid',
+  borderRadius: '10px',
+  margin: '10px',
 };
 
 export const formatAmount = (amount) => {
@@ -481,7 +478,7 @@ const inputStyle = {
   borderRadius: '6px',
   maxWidth: '400px',
   padding: '5px 10px',
-  backgroundColor: 'white',
+  // backgroundColor: 'white',
 };
 
 const methodData = [
