@@ -14,13 +14,11 @@ const Poster = ({ image }) => {
         border: '1px solid #747474',
       }}
     >
-      <Tooltip title="Thêm vào danh sách yêu thích">
-        <Button
-          className={styles['add-to-favorite-list']}
-          type="text"
-          icon={<HeartFilled className={styles['heart-filled']} />}
-        />
-      </Tooltip>
+      <Button
+        className={styles['add-to-favorite-list']}
+        type="text"
+        icon={<HeartFilled className={styles['heart-filled']} />}
+      />
     </div>
   );
 };

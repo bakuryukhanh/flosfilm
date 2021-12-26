@@ -8,7 +8,6 @@ export default [
     component: '@/layouts/BasicLayout',
     routes: [
       { path: '/', component: '@/pages/HomePage/index' },
-
       { path: '/film-detail/:id', component: '@/pages/DetailPage/index' },
       {
         path: '/choosePackage',
@@ -22,6 +21,7 @@ export default [
         path: '/result/:id/:nMonth',
         component: '@/pages/upgradeAccount/result',
       },
+      { path: '/watch/:id', component: '@/pages/WatchPage/index' },
     ],
   },
 ];
