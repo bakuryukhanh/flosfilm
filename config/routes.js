@@ -26,6 +26,7 @@ export default [
         component: '@/pages/upgradeAccount/result',
       },
       { path: '/watch/:id', component: '@/pages/WatchPage/index' },
+      { path: '/search', component: '@/pages/Search/index' },
     ],
   },
 ];
