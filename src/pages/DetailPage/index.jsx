@@ -185,11 +185,20 @@ export default function index() {
     <>
       <div
         style={{
-          backgroundImage: `url(${filmDetail.image})`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100%',
+          position: 'relative',
         }}
       >
+        <div
+          style={{
+            position: 'absolute',
+            filter: 'blur(3px)',
+            inset: '0',
+            backgroundImage: `url(${filmDetail.image})`,
+            backgroundSize: 'cover',
+          }}
+        />
         <div className="container">
           <Row style={{ paddingTop: '8rem', paddingBottom: '2rem' }}>
             <Col span={6}>
