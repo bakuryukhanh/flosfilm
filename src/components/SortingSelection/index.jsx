@@ -8,7 +8,7 @@ const SortingSelection = () => {
 
   return (
     <Select
-      defaultValue="Liên quan"
+      defaultValue="Mới nhất"
       onChange={handleChange}
       className={styles['ant-select-selection-item']}
     >

@@ -1,6 +1,7 @@
 import FilmCard from '@/components/FilmCard';
 import { HeartFilled } from '@ant-design/icons';
 import { Button, Col, Rate, Row, Typography } from 'antd';
+import { useCallback, useEffect, useState } from 'react';
 import styles from './styles.less';
 
 const fakeDataCarousel = [
@@ -55,6 +56,33 @@ const filmDetail = {
 };
 
 export default function WatchPage() {
+  const [isAdded, setIsAdded] = useState(false);
+  const val = localStorage.getItem('rate');
+  const [rate, setRate] = useState(val ? parseFloat(val) : 0);
+
+  const handleAddTOFavoriteList = useCallback(() => {
+    setIsAdded(
+      (prevState) => {
+        localStorage.setItem('isAdded', prevState ? '' : 'true');
+        return !prevState;
+      },
+      [setIsAdded],
+    );
+  });
+
+  const handleRate = useCallback(
+    (val) => {
+      setRate(val);
+      localStorage.setItem('rate', val);
+    },
+    [setRate],
+  );
+
+  useEffect(() => {
+    const val = localStorage.getItem('isAdded');
+    setIsAdded(val ? true : false);
+  }, []);
+
   return (
     <>
       <div
@@ -90,9 +118,14 @@ export default function WatchPage() {
           </Col>
           <Col span={2}>
             <Button
-              className={styles['add-to-favorite-list']}
+              className={
+                isAdded
+                  ? styles['added-to-favorite-list']
+                  : styles['add-to-favorite-list']
+              }
               type="text"
               icon={<HeartFilled className={styles['heart-filled']} />}
+              onClick={handleAddTOFavoriteList}
             />
           </Col>
         </Row>
@@ -100,8 +133,8 @@ export default function WatchPage() {
           <Col>
             <Rate
               allowHalf
-              defaultValue={0}
-              onChange={(val) => console.log(val)}
+              defaultValue={rate}
+              onChange={(val) => handleRate(val)}
             />
           </Col>
         </Row>
