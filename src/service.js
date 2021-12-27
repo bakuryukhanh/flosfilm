@@ -21,3 +21,17 @@ export const requestHollywoodFilms = () => {
   const { films } = data;
   return films.slice(4, 9);
 };
+export const requestFilmDetails = (slug) => {
+  const { films } = data;
+  const item = films.find((film) => film.id === slug);
+  return {
+    vnName: item.name,
+    enName: item.originalName,
+    rate: item.rate,
+    time: item.time,
+    type: item.categoryList[0].name,
+    image: item.wallpaper,
+    description: item.content,
+    thumbImage: item.thumb,
+  };
+};

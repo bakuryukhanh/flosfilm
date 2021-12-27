@@ -19,8 +19,9 @@ import Comment from '@/components/Comment';
 import FilmCard from '@/components/FilmCard';
 import { useParams, history } from 'umi';
 import { useCallback, useEffect, useState } from 'react';
+import { requestFilmDetails } from '@/service';
 
-const filmDetail = {
+const filmDetailFake = {
   vnName: 'Hiệp sĩ xanh',
   enName: 'The green knight',
   description:
@@ -194,12 +195,18 @@ const fakeDataCarousel = [
 
 export default function index() {
   const val = localStorage.getItem('rate');
+  const { slug } = useParams();
   const localComments = localStorage.getItem('comments');
   const [rate, setRate] = useState(val ? parseFloat(val) : 0);
   const [comments, setComments] = useState(
     localComments ? JSON.parse(localComments) : data,
   );
-  const params = useParams();
+  const [filmDetail, setFilmDetail] = useState(filmDetailFake);
+
+  useEffect(() => {
+    const result = requestFilmDetails(slug);
+    setFilmDetail({ ...filmDetailFake, ...result });
+  }, [slug]);
 
   const handleRedirect = useCallback(() => {
     history.push(`/watch/${params.id}`);

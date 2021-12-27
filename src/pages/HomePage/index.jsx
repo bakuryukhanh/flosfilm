@@ -123,6 +123,7 @@ const HomePage = (_props) => {
       time: item.time,
       type: item.categoryList[0].name,
       image: item.wallpaper,
+      slug: item.id,
     };
   });
   const holidayfilms = requestHolidayFilms().map((item) => {
@@ -133,6 +134,7 @@ const HomePage = (_props) => {
       time: item.time,
       type: item.categoryList[0].name,
       image: item.wallpaper,
+      slug: item.id,
     };
   });
   const hollywoodFilms = requestHollywoodFilms().map((item) => {
@@ -143,6 +145,7 @@ const HomePage = (_props) => {
       time: item.time,
       type: item.categoryList[0].name,
       image: item.wallpaper,
+      slug: item.id,
     };
   });
   return (

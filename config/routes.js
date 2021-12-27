@@ -12,7 +12,7 @@ export default [
     component: '@/layouts/BasicLayout',
     routes: [
       { path: '/', component: '@/pages/HomePage/index' },
-      { path: '/film-detail/:id', component: '@/pages/DetailPage/index' },
+      { path: '/film-detail/:slug', component: '@/pages/DetailPage/index' },
       {
         path: '/choosePackage',
         component: '@/pages/upgradeAccount/choosePackage',

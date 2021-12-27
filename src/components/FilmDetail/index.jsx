@@ -8,6 +8,7 @@ import {
   RightCircleFilled,
   StarFilled,
 } from '@ant-design/icons/lib/icons';
+import { useParams } from 'umi';
 
 const CastCard = ({ castInfo }) => {
   return (
@@ -99,6 +100,7 @@ export default function FilmDetail({
   castList,
   directerList,
 }) {
+  const { slug } = useParams();
   return (
     <div>
       <Title className={styles.title}>{vnName}</Title>
