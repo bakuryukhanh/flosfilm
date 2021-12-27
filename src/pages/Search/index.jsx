@@ -1,237 +1,13 @@
+import { useState, useEffect } from 'react';
 import { Row, Col, Typography } from 'antd';
 import styles from './styles.less';
 import classname from 'classnames';
 import { data } from '../../../mock/data';
 import FilmCard from '@/components/FilmCard';
+import { useParams } from 'umi';
+import { requestSearchFilms } from '@/service';
 
 const categories = data.categories;
-const filmDatas = [
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-];
 
 const FilmTag = ({ active, text, onClick, style }) => {
   return (
@@ -245,6 +21,12 @@ const FilmTag = ({ active, text, onClick, style }) => {
 };
 
 const SearchPage = (props) => {
+  const [films, setFilms] = useState([]);
+  const { slug } = useParams();
+  useEffect(() => {
+    const result = requestSearchFilms(slug);
+    setFilms(result);
+  }, [slug]);
   return (
     <div className="container">
       <div style={{ marginTop: '140px' }}>
@@ -312,12 +94,21 @@ const SearchPage = (props) => {
             }}
           >
             <Typography.Title level={3} style={{ color: '#ff8a00' }}>
-              80 kết quả của từ khóa "jo"
+              {films.length} kết quả của từ khóa "{slug}"
             </Typography.Title>
             <Typography.Title level={4}>Phim</Typography.Title>
             <div className={styles['film-grid']}>
-              {filmDatas.map((item) => (
-                <FilmCard {...item} style={{ minHeight: '400px' }} />
+              {films.map((item) => (
+                <FilmCard
+                  vnName={item.name}
+                  enName={item.originalName}
+                  image={item.wallpaper}
+                  thumbImage={item.thumb}
+                  view="2k"
+                  percent={0}
+                  type={item.categoryList[0].name}
+                  style={{ minHeight: '400px' }}
+                />
               ))}
             </div>
             <Typography.Title level={4} style={{ marginTop: '50px' }}>

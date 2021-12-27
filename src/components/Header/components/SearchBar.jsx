@@ -2,16 +2,8 @@ import { useState } from 'react';
 import styles from './styles.less';
 import { Input, Row, Col, Image, Typography } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
-import { data } from '../../../../mock/data';
-
-const handleSearchFilmByName = (name) => {
-  const films = data.films;
-  const lowerName = name.toLowerCase();
-  const result = films.filter((film) => {
-    return film.name.toLowerCase().includes(lowerName);
-  });
-  return result;
-};
+import { requestSearchFilms } from '@/service';
+import { history } from 'umi';
 
 const FilmSearchList = ({ films }) => {
   return (
@@ -62,12 +54,13 @@ const SearchInput = (props) => {
       setFilms([]);
       return;
     }
-    const result = handleSearchFilmByName(value);
+    const result = requestSearchFilms(value);
     setFilms(result);
   };
   const handleOnEnter = (e) => {
     const value = e.target.value;
-    console.log(value);
+    history.push(`/search/${value}`);
+    setFilms([]);
   };
   return (
     <div className={styles['search-container']}>
