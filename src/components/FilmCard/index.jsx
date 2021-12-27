@@ -35,14 +35,14 @@ const FilmCard = (props) => {
         <Typography.Text>
           <ClockCircleOutlined />
           &nbsp;
-          {time} &nbsp;&nbsp;
+          {time} phút &nbsp;&nbsp;
           <EyeOutlined />
           &nbsp; {view} lượt xem
         </Typography.Text>
         <Typography.Title level={4}>
           {vnName ? vnName : enName}
         </Typography.Title>
-        {filmCardType !== 'relevantFilm' && (
+        {percent && (
           <Progress
             percent={percent}
             showInfo={false}

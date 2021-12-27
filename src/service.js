@@ -7,3 +7,17 @@ export const requestSearchFilms = (name) => {
   });
   return result;
 };
+
+export const requestWatchedFilms = () => {
+  const { films } = data;
+  return films.slice(0, 5);
+};
+
+export const requestHolidayFilms = () => {
+  const { films } = data;
+  return films.slice(3, 8);
+};
+export const requestHollywoodFilms = () => {
+  const { films } = data;
+  return films.slice(4, 9);
+};

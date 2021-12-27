@@ -4,6 +4,11 @@ import { Rate, Space, Typography, Row, Col } from 'antd';
 import { Carousel } from 'react-responsive-carousel';
 import styles from './styles.less';
 import { history } from 'umi';
+import {
+  requestHolidayFilms,
+  requestHollywoodFilms,
+  requestWatchedFilms,
+} from '@/service';
 
 const fakeDataCarousel = [
   {
@@ -110,6 +115,36 @@ const customIndicators = (
 };
 
 const HomePage = (_props) => {
+  const watchedFilms = requestWatchedFilms().map((item) => {
+    return {
+      vnName: item.name,
+      enName: item.originalName,
+      rate: item.rate,
+      time: item.time,
+      type: item.categoryList[0].name,
+      image: item.wallpaper,
+    };
+  });
+  const holidayfilms = requestHolidayFilms().map((item) => {
+    return {
+      vnName: item.name,
+      enName: item.originalName,
+      rate: item.rate,
+      time: item.time,
+      type: item.categoryList[0].name,
+      image: item.wallpaper,
+    };
+  });
+  const hollywoodFilms = requestHollywoodFilms().map((item) => {
+    return {
+      vnName: item.name,
+      enName: item.originalName,
+      rate: item.rate,
+      time: item.time,
+      type: item.categoryList[0].name,
+      image: item.wallpaper,
+    };
+  });
   return (
     <div className="container">
       <Carousel
@@ -136,21 +171,82 @@ const HomePage = (_props) => {
         <Row gutter={[30, 30]}>
           <Col span={16}>
             <FilmCard
-              {...fakeDataCarousel[1]}
+              {...watchedFilms[0]}
+              percent={50}
               style={{ aspectRatio: 'unset' }}
             />
           </Col>
           <Col span={8}>
-            <FilmCard {...fakeDataCarousel[1]} />
+            <FilmCard {...watchedFilms[2]} percent={30} />
           </Col>
           <Col span={8}>
-            <FilmCard {...fakeDataCarousel[1]} />
+            <FilmCard {...watchedFilms[3]} percent={40} />
           </Col>
           <Col span={8}>
-            <FilmCard {...fakeDataCarousel[1]} />
+            <FilmCard {...watchedFilms[4]} percent={80} />
           </Col>
           <Col span={8}>
-            <FilmCard {...fakeDataCarousel[1]} />
+            <FilmCard {...watchedFilms[1]} percent={20} />
+          </Col>
+        </Row>
+      </div>
+      <div className={styles['film-section']}>
+        <Row align="middle" justify="space-between">
+          <Col>
+            <Typography.Title level={2}>
+              Phim lễ hay nhất trên Flosfilm
+            </Typography.Title>
+          </Col>
+          <Col>
+            <Typography.Title level={4} style={{ color: 'var(--yellow)' }}>
+              Xem thêm
+            </Typography.Title>
+          </Col>
+        </Row>
+        <Row gutter={[30, 30]}>
+          <Col span={16}>
+            <FilmCard {...holidayfilms[0]} style={{ aspectRatio: 'unset' }} />
+          </Col>
+          <Col span={8}>
+            <FilmCard {...holidayfilms[2]} />
+          </Col>
+          <Col span={8}>
+            <FilmCard {...holidayfilms[3]} />
+          </Col>
+          <Col span={8}>
+            <FilmCard {...holidayfilms[4]} />
+          </Col>
+          <Col span={8}>
+            <FilmCard {...holidayfilms[1]} />
+          </Col>
+        </Row>
+      </div>
+      <div className={styles['film-section']}>
+        <Row align="middle" justify="space-between">
+          <Col>
+            <Typography.Title level={2}>Hành động hollywood</Typography.Title>
+          </Col>
+          <Col>
+            <Typography.Title level={4} style={{ color: 'var(--yellow)' }}>
+              Xem thêm
+            </Typography.Title>
+          </Col>
+        </Row>
+        <Row gutter={[30, 30]}>
+          <Col span={16}>
+            <FilmCard {...hollywoodFilms[0]} style={{ aspectRatio: 'unset' }} />
+          </Col>
+          <Col span={8}>
+            <FilmCard {...hollywoodFilms[2]} />
+          </Col>
+          <Col span={8}>
+            <FilmCard {...hollywoodFilms[3]} />
+          </Col>
+          <Col span={8}>
+            <FilmCard {...hollywoodFilms[4]} />
+          </Col>
+          <Col span={8}>
+            <FilmCard {...hollywoodFilms[1]} />
           </Col>
         </Row>
       </div>
