@@ -1,0 +1,1819 @@
+[
+  {
+    "id": "ticktickboom",
+    "name": "tick, tick...BOOM!",
+    "originalName": "tick, tick...BOOM!",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDZmMGY0ZGItNjQyNC00MTFkLTk2NDctMGU1YTZkMzk2YTEwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UY720_.jpg",
+    "wallpaper": "https://m.media-amazon.com/images/M/MV5BNjg0MmJhNjUtNGJiMC00OTZjLTllYmEtODY2OGVjNGViNDMyXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1280_.jpg",
+    "thumb": "https://m.media-amazon.com/images/M/MV5BZmMyMmE0M2UtN2E2MC00YzVmLTkwODgtOTVhYjVlOTBhY2RjXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1013_.jpg",
+    "content": "Sắp bước sang tuổi 30, một nhà soạn kịch triển vọng xoay xở với tình yêu, tình bạn và áp lực phải tạo ra một tác phẩm tuyệt vời trước khi thời gian dần cạn.",
+    "episode": 1,
+    "totalView": 4000000,
+    "viewBymonth": 10000,
+    "viewByweek": 5001,
+    "rate": 4.0,
+    "rateTime": 150000,
+    "year": 2021,
+    "time": 107,
+    "directerList": [
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Johannes Roberts"
+      }
+    ],
+    "writerList": [
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Johannes Roberts"
+      }
+    ],
+    "castList": [
+      {
+        "id": "es",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjE2MjI2OTk1OV5BMl5BanBnXkFtZTgwNTY1NzM4MDI@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Andrew Garfield"
+      },
+      {
+        "id": "mn",
+        "image": "https://m.media-amazon.com/images/M/MV5BYzUxOWUwYWItMzIzNS00YTQ3LWJhZGYtYTJkNGZlZjEzMmIwXkEyXkFqcGdeQXVyMTI4MDM5MzYw._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Alexandra Shipp"
+      },
+      {
+        "id": "bc",
+        "image": "https://m.media-amazon.com/images/M/MV5BM2Q2NWE4YzEtZGFiYS00ZWVjLThlNDItMTY2ODZmNjkzNzI3XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Robin de Jesus"
+      },
+      {
+        "id": "jb",
+        "image": "https://m.media-amazon.com/images/M/MV5BZGY4NGU0NjgtNjc0Mi00OTk3LWFmMzktNjY4M2JlMDkzOTFkXkEyXkFqcGdeQXVyMTExNzQ3MzAw._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Vanessa Hudgens"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BNzk1MzY0NzUzNV5BMl5BanBnXkFtZTcwMzU2NjczOQ@@._V1_UY44_CR11,0,32,44_AL_.jpg",
+        "name": "Joshua Henry"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BOWM4Nzc1ODUtYTY1My00MzQ1LTkxZWYtNTI1ZTAyNWY1MjYwXkEyXkFqcGdeQXVyMTA0NDg3NA@@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Jonathan Marc Sherman"
+      },
+      {
+        "id": "wd",
+        "image": "https://m.media-amazon.com/images/M/MV5BYTdjMTViY2QtNWQxOC00YTdlLThhOTQtMWI4MTQwZWRmOGRjXkEyXkFqcGdeQXVyMzU1OTEwOTg@._V1_UY44_CR8,0,32,44_AL_.jpg",
+        "name": "Michaela Jaé (MJ) Rodriguez"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BNDM2ODgxNGUtNThkNy00NzMzLWExODQtMjdhMTdmZmExZWZhXkEyXkFqcGdeQXVyMTA1ODAyOTI1._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Ben Levi Ross"
+      },
+      {
+        "id": "bw",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTU1MDM4MDE5OF5BMl5BanBnXkFtZTgwNTA2OTY4NTE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Judith Light"
+      },
+      {
+        "id": "tr",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjQwMzg3ODUxNF5BMl5BanBnXkFtZTgwMzc5MDcxNDM@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Bradley Whitford"
+      },
+      {
+        "id": "mt",
+        "image": "https://m.media-amazon.com/images/M/MV5BNzEyNjZkMGItOTEzZi00NWNiLWFlZjUtMmZkZDQ5NDc2MGY4XkEyXkFqcGdeQXVyNjk1MjYyNTA@._V1_UY44_CR6,0,32,44_AL_.jpg",
+        "name": "Laura Benanti"
+      },
+      {
+        "id": "ar",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTU0NTEwNzYyMV5BMl5BanBnXkFtZTgwMTM0NTMxODE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Danielle Ferland"
+      },
+      {
+        "id": "hb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTY5NDE4MjgzMF5BMl5BanBnXkFtZTgwNzg0OTQxMzE@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Micaela Diamond"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BMDQwOGVlYmItMTZkOS00M2ZjLThiYmUtOGFmNmZkNGJlYzk0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY44_CR10,0,32,44_AL_.jpg",
+        "name": "Utkarsh Ambudkar"
+      },
+      {
+        "id": "pn",
+        "image": "https://m.media-amazon.com/images/M/MV5BYTFlNDUxNjgtZmJmYi00NmIyLWFjN2ItZGMxNmEyNGQzZTYyXkEyXkFqcGdeQXVyNjkzNjQ5NjU@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Gizel Jimenez"
+      }
+    ],
+    "categoryList": [
+      {
+        "id": "amnhac",
+        "name": "Âm nhạc"
+      },
+      {
+        "id": "drama",
+        "name": "Giật gân"
+      }
+    ],
+    "country": {
+      "id": "aumy",
+      "name": "Âu Mỹ"
+    }
+  },
+  {
+    "id": "residentevil",
+    "name": "Vùng Đất Quỷ Dữ: Quỷ Dữ Trỗi Dậy",
+    "originalName": "Resident Evil: Welcome to Raccoon City",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjRmMDUxODctYjg3NC00NDRhLWJhZWItMjg0OTZkMDBjNWUxXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_FMjpg_UX1080_.jpg",
+    "wallpaper": "https://images.indianexpress.com/2021/12/resident-evil-Raccoon-City-1200.jpg",
+    "thumb": "https://www.parisbeacon.com/wp-content/uploads/2021/11/61F1B67B-F2B9-4629-AF1E-511060DDB9DA.jpeg",
+    "content": "Bộ phim Vùng Đất Quỷ Dữ: Quỷ Dữ Trỗi Dậy có nội dung từng là ngôi nhà thịnh vượng của tập đoàn dược phẩm khổng lồ Umbrella, thành phố Raccoon hiện là một thị trấn miền Trung Tây đang hấp hối. Cuộc di cư của công ty đã để lại cho thành phố một vùng đất hoang tàn… với việc nấu bia độc ác bên dưới bề mặt. Khi cái ác đó được giải phóng, người dân thị trấn vĩnh viễn… thay đổi… và một nhóm nhỏ những người sống sót phải làm việc cùng nhau để khám phá ra sự thật đằng sau Umbrella và vượt qua màn đêm.",
+    "episode": 1,
+    "totalView": 4000000,
+    "viewBymonth": 10000,
+    "viewByweek": 5001,
+    "rate": 4.0,
+    "rateTime": 150000,
+    "year": 2021,
+    "time": 107,
+    "directerList": [
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Johannes Roberts"
+      }
+    ],
+    "writerList": [
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Johannes Roberts"
+      }
+    ],
+    "castList": [
+      {
+        "id": "es",
+        "image": "https://m.media-amazon.com/images/M/MV5BNjk5NjE5NTczMV5BMl5BanBnXkFtZTcwODI0OTM0NA@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Kaya Scodelario"
+      },
+      {
+        "id": "mn",
+        "image": "https://m.media-amazon.com/images/M/MV5BZGMwMmNmNWItZWI4Mi00OWY5LThjZmUtMjg2NDcxZDljYjYyXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Hannah John-Kamen"
+      },
+      {
+        "id": "bc",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjE2OTMyMDM2Ml5BMl5BanBnXkFtZTgwNDAyMjU4NzE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Robbie Amell"
+      },
+      {
+        "id": "jb",
+        "image": "https://m.media-amazon.com/images/M/MV5BN2Y1OGZjNWUtYTdmMy00OGQxLTg5MmYtOTRjMjMxZWI1NTJhXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Tom Hopper"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BZjBmZjYzZTAtNmFmNC00YWFiLTliMTAtMjZlN2FiMTVhMmQ0XkEyXkFqcGdeQXVyMTA4NTY5Njkx._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Avan Jogia"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTkxNzI1NjQxNl5BMl5BanBnXkFtZTcwMzE2MzI0Mg@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Donal Logue"
+      },
+      {
+        "id": "wd",
+        "image": "https://m.media-amazon.com/images/M/MV5BOTViNzE5MTItODVkYy00NWZiLThlNDMtZTc4Njg0ZTEwODM2XkEyXkFqcGdeQXVyOTQ4NzcwOQ@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Neal McDonough"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BYWUxZGQ3ZjYtZjJmZC00MjQzLThhNGQtYTdmNzc0NjEyZjE0XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Lily Gao"
+      },
+      {
+        "id": "bw",
+        "image": "https://m.media-amazon.com/images/M/MV5BN2ZiM2FjOGYtMTE3OC00Zjk2LWJhNjQtY2MzMzAwOGY1MjkzXkEyXkFqcGdeQXVyNDY2MDc2Mg@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Chad Rook"
+      },
+      {
+        "id": "tr",
+        "image": "https://m.media-amazon.com/images/M/MV5BNDUwZGZlZWEtNzU4NC00NjVmLTgwOGYtMTM3ZGRhM2M5MzRkXkEyXkFqcGdeQXVyMTA2OTQyOTI0._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Marina Mazepa"
+      },
+      {
+        "id": "mt",
+        "image": "https://m.media-amazon.com/images/M/MV5BNjkzZDRjZmMtOGE2ZS00MjkxLTk3ZTUtZWEwNzBhOTcwMzkyXkEyXkFqcGdeQXVyMTA5ODk4MDAx._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Nathan Dales"
+      },
+      {
+        "id": "ar",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTU0NTEwNzYyMV5BMl5BanBnXkFtZTgwMTM0NTMxODE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Josh Cruddas"
+      },
+      {
+        "id": "hb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTY5NDE4MjgzMF5BMl5BanBnXkFtZTgwNzg0OTQxMzE@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Pat Thornton"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BYjZlYTEzY2UtMmFjYi00M2Y2LWI4ZmQtNGU5OWFkOTE0NDY2XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Holly de Barros"
+      },
+      {
+        "id": "pn",
+        "image": "https://m.media-amazon.com/images/M/MV5BZjc4NTEyZmMtYWYzNC00YTM1LWI4ODEtOWUwZjFkNTU3MGI5XkEyXkFqcGdeQXVyMjMwMjA4ODY@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Janet Porter"
+      }
+    ],
+    "categoryList": [
+      {
+        "id": "hanhdong",
+        "name": "Hành động"
+      },
+      {
+        "id": "khoahoc",
+        "name": "Khoa học"
+      },
+      {
+        "id": "vientuong",
+        "name": "Viễn tưởng"
+      },
+      {
+        "id": "ma-kinhdi",
+        "name": "Ma - Kinh dị"
+      },
+      {
+        "id": "drama",
+        "name": "Giật gân"
+      }
+    ],
+    "country": {
+      "id": "aumy",
+      "name": "Âu Mỹ"
+    }
+  },
+  {
+    "id": "encanto",
+    "name": "Encanto: Vùng Đất Thần Kỳ",
+    "originalName": "Encanto",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzQ0ODE5MWItNmM1Zi00MGJlLWJiZTUtY2NlZTdjMDYxYjBlXkEyXkFqcGdeQXVyMTE2Mzg1NTEy._V1_FMjpg_UX1080_.jpg",
+    "wallpaper": "https://m.media-amazon.com/images/M/MV5BZTk0OGE3ZGEtZjJjZS00MjdhLWExMzEtZGRlZTdkODI5YzYzXkEyXkFqcGdeQXVyMTM0MTkzMzY0._V1_FMjpg_UX988_.jpg",
+    "thumb": "https://m.media-amazon.com/images/M/MV5BYWMyNjdlMTYtYTk2Yy00NGQ3LTgyOGEtNzZlZTkzYjY0Njg2XkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_FMjpg_UX1086_.jpg",
+    "content": "Phim xoay quanh câu chuyện về gia đình Madrigalas sống khép kin tại một căn nhà nằm phía sau núi Colombia. Nơi đây, tràn đầy những ma thuật, thị trấn đầy hài hước và những sinh vật thiên nhiên đầy diệu kỳ, nơi đây còn được gọi là Encanto. Tại đây, khi những đứa trẻ được sinh ra đời, đều được ban phát một sức mạnh đặc biệt có khả năng chữa lành mọi vết thương và sức mạnh dùng để chiến đấu chống lại kẻ xấu. Thế nhưng, đứa trẻ Mirabel lại ngoại lệ khi cô không hề có được bất kỳ sức mạnh nào, và khi Encanto gặp nguy hiểm thì cô là hy vọng duy nhất để bảo vệ nơi đây.",
+    "episode": 1,
+    "totalView": 4000000,
+    "viewBymonth": 120000,
+    "viewByweek": 90001,
+    "rate": 5.0,
+    "rateTime": 150000,
+    "year": 2021,
+    "time": 102,
+    "directerList": [
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Jared Bush"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Byron Howard"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Charise Castro Smith"
+      }
+    ],
+    "writerList": [
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Charise Castro Smith"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Jared Bush"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Byron Howard"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Jason Hand"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Nancy Kruse"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Lin-Manuel Miranda"
+      }
+    ],
+    "castList": [
+      {
+        "id": "es",
+        "image": "https://m.media-amazon.com/images/M/MV5BYWY3ZGQ0OGUtZDNjYi00MmRkLWE4YmMtYzk3MzAwZjQxMDRlXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_UY44_CR16,0,32,44_AL_.jpg",
+        "name": "Stephanie Beatriz"
+      },
+      {
+        "id": "mn",
+        "image": "https://m.media-amazon.com/images/M/MV5BMDdlMDhmNTYtM2Q3Zi00ZDQ5LWFhZjgtZDg1OGExOTczYWY5XkEyXkFqcGdeQXVyMTM0NDU2NTIz._V1_UY44_CR6,0,32,44_AL_.jpg",
+        "name": "María Cecilia Botero"
+      },
+      {
+        "id": "bc",
+        "image": "https://m.media-amazon.com/images/M/MV5BNTEyMjMxNDg5NF5BMl5BanBnXkFtZTcwNzczOTY4MQ@@._V1_UY44_CR2,0,32,44_AL_.jpg",
+        "name": "John Leguizamo"
+      },
+      {
+        "id": "jb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTE2Y2QyNjUtYjdhNy00MGZiLThiOTctNjZhYjk5M2M2OTJiXkEyXkFqcGdeQXVyMTM0NDQwODU5._V1_UY44_CR6,0,32,44_AL_.jpg",
+        "name": "Mauro Castillo"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BN2Q0ZDU1ZmItODRjZS00OTk5LWI4M2YtM2FmYWQ0NjU3ZTM1XkEyXkFqcGdeQXVyNzE4Njc3NjQ@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Jessica Darrow"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BNGI5ZmE2NTgtOGRjNy00Y2UyLTk0OTUtOWZiNWYxZmNhY2FiXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR23,0,32,44_AL_.jpg",
+        "name": "Angie Cepeda"
+      },
+      {
+        "id": "wd",
+        "image": "https://m.media-amazon.com/images/M/MV5BNmQ1YTRlNmMtZTM1NC00Zjk0LTk1MjUtZjEyNmFkNDIxMDIzXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Carolina Gaitan"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjEyODg0OTg5OF5BMl5BanBnXkFtZTgwOTk1MDAzMTI@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Diane Guerrero"
+      },
+      {
+        "id": "bw",
+        "image": "https://m.media-amazon.com/images/M/MV5BY2U2NDkyMGYtNzg3YS00YmU0LTkyNzEtNWE5YzM0NmM1NzI2XkEyXkFqcGdeQXVyNTE0Mzg0MzM@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Wilmer Valderrama"
+      },
+      {
+        "id": "tr",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjc5MDEyMDM0MV5BMl5BanBnXkFtZTgwNTMwOTg0NjM@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Rhenzy Feliz"
+      },
+      {
+        "id": "mt",
+        "image": "https://m.media-amazon.com/images/M/MV5BYmRjMmIwNmQtYTVkYS00Y2FjLThhOGUtNzNlYjUxYzUwZmJiXkEyXkFqcGdeQXVyMTMwMTQ5OTMz._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Ravi Cabot-Conyers"
+      },
+      {
+        "id": "ar",
+        "image": "https://m.media-amazon.com/images/M/MV5BZjdmZjM3ODMtNzczOS00NzUzLWE1YWYtNWI0ZDZiYjA4YzgyXkEyXkFqcGdeQXVyMTM0Mzk4ODE5._V1_UY44_CR6,0,32,44_AL_.jpg",
+        "name": "Adassa"
+      },
+      {
+        "id": "hb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTk5OTM3MzM2NF5BMl5BanBnXkFtZTgwOTM2MTY2MDI@._V1_UY44_CR6,0,32,44_AL_.jpg",
+        "name": "Maluma"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Rose Portillo"
+      },
+      {
+        "id": "pn",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Noemi Josefina Flores"
+      }
+    ],
+    "categoryList": [
+      {
+        "id": "hoathinh",
+        "name": "Hoạt hình"
+      },
+      {
+        "id": "haihuoc",
+        "name": "Hài hước"
+      },
+      {
+        "id": "giadinh",
+        "name": "Gia đình"
+      }
+    ],
+    "country": {
+      "id": "aumy",
+      "name": "Âu Mỹ"
+    }
+  },
+  {
+    "id": "venom2",
+    "name": "Venom: Đối Mặt Tử Thù",
+    "originalName": "Venom: Let There Be Carnage",
+    "poster": "https://www.elleman.vn/wp-content/uploads/2021/12/09/208040/review-phim-venom-let-there-be-carnage-elle-man-1.jpg",
+    "wallpaper": "https://m.media-amazon.com/images/M/MV5BNzA4MjEzMTktZWMxYS00YWQ1LWJhMWItZTUyMGFmZjFmMjE4XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UY720_.jpg",
+    "thumb": "https://m.media-amazon.com/images/M/MV5BMmZhYWU1NTItYmQwNC00ZjQ5LTkxYzMtNTNkZjkwZDA0MTVkXkEyXkFqcGdeQXVyMTE0NDQxMDEz._V1_FMjpg_UX1280_.jpg",
+    "content": "Trong Venom 2: Đối mặt với tử thù, tài tử Tom Hardy vẫn đảm nhận vai chính là nhà báo Eddie Brock, và cũng là vật chủ của gã quái vật Venom. Phim tiếp nối câu chuyện ở phần 1, sau khi Venom sống sót và quyết định ở lại Trái Đất cùng anh chàng Eddie vì yêu quý hành tinh này.",
+    "episode": 1,
+    "totalView": 3000000,
+    "viewBymonth": 50000,
+    "viewByweek": 5001,
+    "rate": 4.0,
+    "rateTime": 120000,
+    "year": 2021,
+    "time": 97,
+    "directerList": [
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Andy Serkis"
+      }
+    ],
+    "writerList": [
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Kelly Marcel"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Tom Hardy"
+      }
+    ],
+    "castList": [
+      {
+        "id": "es",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTQ3ODEyNjA4Nl5BMl5BanBnXkFtZTgwMTE4ODMyMjE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Tom Hardy"
+      },
+      {
+        "id": "mn",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTU3NDc2ODc4MF5BMl5BanBnXkFtZTcwODk2MzAyMg@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Woody Harrelson"
+      },
+      {
+        "id": "bc",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjExNjY5NDY0MV5BMl5BanBnXkFtZTgwNjQ1Mjg1MTI@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Michelle Williams"
+      },
+      {
+        "id": "jb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTUyMDU1MTU2N15BMl5BanBnXkFtZTgwODkyNzQ3MDE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Naomie Harris"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BMzUzMjcwOTMzNF5BMl5BanBnXkFtZTgwMjE3MDEwNDE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Reid Scott"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BNDA0OGU1OWUtZDNhNC00YzdkLTk5ZWYtY2RjNTM0NjBmYmYwXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Stephen Graham"
+      },
+      {
+        "id": "wd",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjA4NjQ0YmUtN2JjMy00ZWQ2LTg2NWUtOWZkYmViZTU4NTJhXkEyXkFqcGdeQXVyMjI5MDIwNDc@._V1_UY44_CR3,0,32,44_AL_.jpg",
+        "name": "Peggy Lu"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Sian Webber"
+      },
+      {
+        "id": "bw",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTA3MGU5MDYtNDA0My00NDlkLTlhOWQtYTM0ODU3MWU1MWE5XkEyXkFqcGdeQXVyNjQzODU1MjQ@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Michelle Greenidge"
+      },
+      {
+        "id": "tr",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Rob Bowen"
+      },
+      {
+        "id": "mt",
+        "image": "https://m.media-amazon.com/images/M/MV5BMDJiMjFjZmQtYmE0NS00OGEwLTg3N2ItNmQwMWNlODJkMGIyXkEyXkFqcGdeQXVyNDA1MjI3OA@@._V1_UY44_CR7,0,32,44_AL_.jpg",
+        "name": "Laurence Spellman"
+      },
+      {
+        "id": "ar",
+        "image": "https://m.media-amazon.com/images/M/MV5BYmFlZGRhZjQtOTg3Ny00Y2E2LWI1NzYtYzg5OTU1MjVmNjZkXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Little Simz"
+      },
+      {
+        "id": "hb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMzVhYjI4ZjYtMjJiYy00NWFlLTg3NDEtNTc5MThhN2NlYWNiXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Jack Bandeira"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Olumide Olorunfemi"
+      },
+      {
+        "id": "pn",
+        "image": "https://m.media-amazon.com/images/M/MV5BODIwMTAzZGMtMDk4Yy00ZWM2LWIzZjUtOTYzM2VmZjFkY2FhXkEyXkFqcGdeQXVyNjI1MDAzMjM@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Scroobius Pip"
+      }
+    ],
+    "categoryList": [
+      {
+        "id": "hanhdong",
+        "name": "Hành động"
+      },
+      {
+        "id": "phieuluu",
+        "name": "Phiêu lưu"
+      },
+      {
+        "id": "vientuong",
+        "name": "Viễn tưởng"
+      }
+    ],
+    "country": {
+      "id": "aumy",
+      "name": "Âu Mỹ"
+    }
+  },
+  {
+    "id": "shangchi",
+    "name": "Shang-Chi Và Huyền Thoại Thập Luân",
+    "originalName": "Shang-Chi and the Legend of the Ten Rings",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTliYjlkNDQtMjFlNS00NjgzLWFmMWEtYmM2Mzc2Zjg3ZjEyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UY720_.jpg",
+    "wallpaper": "https://images8.alphacoders.com/116/thumb-1920-1167021.jpg",
+    "thumb": "https://m.media-amazon.com/images/M/MV5BYmVhNmY4YWQtNDcxZS00YTI0LTk5M2QtYzlhYWZlMjNjMGQ0XkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_FMjpg_UX540_.jpg",
+    "content": "Shang-Chi và huyền thoại Thập Luân - Shang-Chi and the Legend of the Ten Rings là bộ phim siêu anh hùng của Mỹ được ra mắt vào năm 2021 dựa trên nhân vật Shang-Chi của Marvels. Tác phẩm do đạo diễn Destin Daniel Cretton chịu trách nhiệm chỉ đạo, với sự tham gia của các diễn viên Simu Liu, Awkwafina, Meng'er Zhang, Fala Chen, Florian Munteanu và Benedict Wong.",
+    "episode": 1,
+    "totalView": 1000000,
+    "viewBymonth": 90000,
+    "viewByweek": 50001,
+    "rate": 4.5,
+    "rateTime": 60000,
+    "year": 2021,
+    "time": 132,
+    "directerList": [
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Destin Daniel Cretton"
+      }
+    ],
+    "writerList": [
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Dave Callaham"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Destin Daniel Cretton"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Andrew Lanham"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Dave Callaham"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Destin Daniel Cretton"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Steve Englehart"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Jim Starlin"
+      }
+    ],
+    "castList": [
+      {
+        "id": "es",
+        "image": "https://m.media-amazon.com/images/M/MV5BNzQ1OTM3YzEtNDA2NS00NjMwLTgwNDUtZDc2NmFlZjYwMDM1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Simu Liu"
+      },
+      {
+        "id": "mn",
+        "image": "https://m.media-amazon.com/images/M/MV5BODYzNjYzMzk0Ml5BMl5BanBnXkFtZTYwNDUzMDU0._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Tony Chiu-Wai Leung"
+      },
+      {
+        "id": "bc",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTU0NTUwNjkyN15BMl5BanBnXkFtZTgwMjM0NzEzMTI@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Awkwafina"
+      },
+      {
+        "id": "jb",
+        "image": "https://m.media-amazon.com/images/M/MV5BOTU2Njg2NzM4M15BMl5BanBnXkFtZTgwNjYwNjQwMTI@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Ben Kingsley"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BNDBmYTRhZTctMGNhMS00ZDAyLWI3ZjQtNzMwODE4MDMyYmU1XkEyXkFqcGdeQXVyMTExNzQ3MzAw._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Meng'er Zhang"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BYTY4MTQxMGQtMWI5Zi00MGUyLTg3Y2YtM2Q0MjcyNzk4NjU5XkEyXkFqcGdeQXVyNDU0MjU0MzI@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Fala Chen"
+      },
+      {
+        "id": "wd",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTg0NTI0NDkzOF5BMl5BanBnXkFtZTcwMjYwMTIwNw@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Michelle Yeoh"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTk3OTYwOTUwM15BMl5BanBnXkFtZTcwNTYwNzAyOA@@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Wah Yuen"
+      },
+      {
+        "id": "bw",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTA3MGU5MDYtNDA0My00NDlkLTlhOWQtYTM0ODU3MWU1MWE5XkEyXkFqcGdeQXVyNjQzODU1MjQ@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Florian Munteanu"
+      },
+      {
+        "id": "tr",
+        "image": "https://m.media-amazon.com/images/M/MV5BNTQyM2JmNDYtMDI3Zi00NTlkLWEyNTUtNjI5NjI2NmIyZWI0XkEyXkFqcGdeQXVyMjM0Njg4ODc@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Andy Le"
+      },
+      {
+        "id": "mt",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTUxMjMxMTA0Nl5BMl5BanBnXkFtZTgwNjAxMDg2NDE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Paul W. He"
+      },
+      {
+        "id": "ar",
+        "image": "https://m.media-amazon.com/images/M/MV5BZWVjODgyNWQtMTM5Yy00ZDE0LTk5OTItZjRmNWQ1NGFmMDJiXkEyXkFqcGdeQXVyMTM1NzI5MzYw._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Jayden Zhang"
+      },
+      {
+        "id": "hb",
+        "image": "https://m.media-amazon.com/images/M/MV5BZDdhZDQ0YzUtMmFmMS00YjhlLWIyMDAtMzkwOThkYzQ3ODEwXkEyXkFqcGdeQXVyMTM3NTg0MzYz._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Elodie Fong"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Arnold Sun"
+      },
+      {
+        "id": "pn",
+        "image": "https://m.media-amazon.com/images/M/MV5BNTBjZjQwYzctY2RkNi00ODI0LWI3N2UtYmMwMDk2M2FkOTI0XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR2,0,32,44_AL_.jpg",
+        "name": "Stephanie Hsu"
+      }
+    ],
+    "categoryList": [
+      {
+        "id": "hanhdong",
+        "name": "Hành động"
+      },
+      {
+        "id": "phieuluu",
+        "name": "Phiêu lưu"
+      },
+      {
+        "id": "vientuong",
+        "name": "Viễn Tưởng"
+      }
+    ],
+    "country": {
+      "id": "aumy",
+      "name": "Âu Mỹ"
+    }
+  },
+  {
+    "id": "yellowjackets",
+    "name": "Yellowjackets",
+    "originalName": "Yellowjackets",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDM1NzA2OWItMWEzNC00Yzc2LWIxMmUtOWY0ZWJhMzEwNWYxXkEyXkFqcGdeQXVyOTA3MTMyOTk@._V1_FMjpg_UY720_.jpg",
+    "wallpaper": "https://m.media-amazon.com/images/M/MV5BODRmYjYyODEtMDc0Mi00NTkzLTg2ZTktZmE3ZTdiNDRhODc4XkEyXkFqcGdeQXVyOTA3MTMyOTk@._V1_FMjpg_UX1280_.jpg",
+    "thumb": "https://m.media-amazon.com/images/M/MV5BM2VjY2NjZGUtOWQ0Mi00NzA3LWI1OGEtOTRlZWEwNmFhNWYzXkEyXkFqcGdeQXVyOTA3MTMyOTk@._V1_FMjpg_UX960_.jpg",
+    "content": "Một đội bóng đá nữ trung học tài năng may mắn sống sót sau vụ tai nạn máy bay tận sâu trong khu rừng hoang dã Ontario.",
+    "episode": 8,
+    "totalView": 500000,
+    "viewBymonth": 15000,
+    "viewByweek": 10000,
+    "rate": 4.5,
+    "rateTime": 30000,
+    "year": 2021,
+    "time": 60,
+    "directerList": [
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Eva Sørhaug"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Karyn Kusama"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Deepa Mehta"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Jamie Travis"
+      },
+      {
+        "id": "cs",
+        "name": "Bille Woodruff"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Ariel Kleiman"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Daisy von Scherler Mayer"
+      }
+    ],
+    "writerList": [
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Ashley Lyle"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Bart Nickerson"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Liz Phang"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Ameni Rozsa"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Sarah L. Thompson"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Katherine Kearns"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Jonathan Lisco"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Chantelle Wells"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Cameron Brent Johnson"
+      }
+    ],
+    "castList": [
+      {
+        "id": "es",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjIzNDg5NTg4Nl5BMl5BanBnXkFtZTcwMTU3NjgyMw@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Melanie Lynskey"
+      },
+      {
+        "id": "mn",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTUzOTU5NjQzM15BMl5BanBnXkFtZTYwMjE4NzI0._V1_FMjpg_UX300_.jpg",
+        "name": "Tawny Cypress"
+      },
+      {
+        "id": "bc",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTYxNDk4NDAyMl5BMl5BanBnXkFtZTgwNjIzMTc0NTM@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Ella Purnell"
+      },
+      {
+        "id": "jb",
+        "image": "https://m.media-amazon.com/images/M/MV5BYzA1YmIzYzUtZDgxMy00N2RkLWI5NjktYmQ5ZDQ0YmQ5NmNhXkEyXkFqcGdeQXVyMTEwMTU2NDc5._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Sophie Nélisse"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BOTk5YTk5NGUtMzhkNC00NTk5LTliN2EtOWNhMzc3N2U5NWI3XkEyXkFqcGdeQXVyMTExNzQzMDE0._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Sophie Thatcher"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BOTJjNDNkN2MtOTMyMy00YmVhLTljYWMtOWFmYjdiNmY3ZmUzXkEyXkFqcGdeQXVyNDI3MDgyNQ@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Samantha Hanratty"
+      },
+      {
+        "id": "wd",
+        "image": "https://m.media-amazon.com/images/M/MV5BOTI2OTBiNTUtMWJiZS00ODUyLTk3YTQtNmEyNjgyZDU0ODg3XkEyXkFqcGdeQXVyMjA1NTAzMDU@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Steven Krueger"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BZmY5YTBkZDYtNjVhNi00ZDRmLTg4NzctYWQ3Y2MzOTNhMDExXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Warren Kole"
+      },
+      {
+        "id": "bw",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjUzMzk5NzcyNV5BMl5BanBnXkFtZTcwNzQ1NjkzNw@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Christina Ricci"
+      },
+      {
+        "id": "tr",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjE4Nzk1MDgyNV5BMl5BanBnXkFtZTYwNzQ3MDgy._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Juliette Lewis"
+      },
+      {
+        "id": "mt",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjkxN2E1MGUtMzhmZC00YzQ2LWJlYmYtOGI2NjZmYjczNGE0XkEyXkFqcGdeQXVyNTg5MDcyMzg@._V1_UY44_CR24,0,32,44_AL_.jpg",
+        "name": "Keeya King"
+      },
+      {
+        "id": "ar",
+        "image": "https://m.media-amazon.com/images/M/MV5BYzdhNGYyNDMtYTAyMi00MDkzLWI3ZDctNmM4MzNjY2YyOWI4XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Kevin Alves"
+      },
+      {
+        "id": "hb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMDlhODM4NTItODZlNi00MTA1LThkZmMtZDVkMTM1ZWZjMTMzXkEyXkFqcGdeQXVyNDc3MjUxODA@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Jasmin Savoy Brown"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BZTc1MTk0YTYtMjY2ZS00ZmY3LTk3NDctMjMzYzM3ZmYwNzllXkEyXkFqcGdeQXVyODcyNzI0OTE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Courtney Eaton"
+      },
+      {
+        "id": "pn",
+        "image": "https://m.media-amazon.com/images/M/MV5BMDE1YjE1ZTMtYjgwNS00ODQyLWIzNDctZGE4NDllMDMyOGFiL2ltYWdlXkEyXkFqcGdeQXVyNTgwNDU1NjY@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Liv Hewson"
+      },
+      {
+        "id": "ms",
+        "image": "https://m.media-amazon.com/images/M/MV5BNmVjY2I2OWUtNDY5MS00NDU3LTk1NWItODJiYzY1N2E5MmU3XkEyXkFqcGdeQXVyOTIxNjEzNTk@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Jane Widdop"
+      },
+      {
+        "id": "hk",
+        "image": "https://m.media-amazon.com/images/M/MV5BOGViMjIxODUtYWE3Yi00NGY0LThiNDktNTg5NGUxYjZlNTk3XkEyXkFqcGdeQXVyNjM3MTc2MDU@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Luciano Leroux"
+      },
+      {
+        "id": "jbs",
+        "image": "https://m.media-amazon.com/images/M/MV5BMDMxOTkxZTMtYzE5Ny00NWU3LWI0MjUtODY2NjQyMTU3YTA3XkEyXkFqcGdeQXVyMTAwNTkwNzg4._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Paul Bullion"
+      },
+      {
+        "id": "ef",
+        "image": "https://m.media-amazon.com/images/M/MV5BNzEyYjRhMGEtNmNmOC00NDc0LWJiMTktZDdiMjBmNzU4OTg1XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Aiden Stoxx"
+      },
+      {
+        "id": "jks",
+        "image": "https://m.media-amazon.com/images/M/MV5BODAyYmUzMTItZGU1Yy00ZDMwLThlOWYtNDA4N2Y0OWRhYzkxXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR6,0,32,44_AL_.jpg",
+        "name": "Peter Gadiot"
+      }
+    ],
+    "categoryList": [
+      {
+        "id": "hanhdong",
+        "name": "Hành động"
+      },
+      {
+        "id": "tv-series",
+        "name": "TV Series"
+      },
+      {
+        "id": "phieuluu",
+        "name": "Phiêu lưu"
+      },
+      {
+        "id": "drama",
+        "name": "Giật gân"
+      }
+    ],
+    "country": {
+      "id": "aumy",
+      "name": "Âu Mỹ"
+    }
+  },
+  {
+    "id": "thewitcher",
+    "name": "Thợ Săn Quái Vật",
+    "originalName": "The Witcher",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2FiOWU4YzYtMzZiOS00MzcyLTlkOGEtOTgwZmEwMzAxMzA3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UY720_.jpg",
+    "wallpaper": "https://m.media-amazon.com/images/M/MV5BYTdlMzJkNDQtNGJjMi00NzE1LWJjODgtNDgzM2EyYjczNTczXkEyXkFqcGdeQXVyMzI2MDYxMTI@._V1_FMjpg_UX1100_.jpg",
+    "thumb": "https://m.media-amazon.com/images/M/MV5BZjdmNWUxZTEtZGIzZS00NGE1LWFiNmMtZDliMzg0MmQ2MTVkXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1280_.jpg",
+    "content": "Thợ Săn Quái Vật kể về Geralt xứ Rivia, một thợ săn quái vật đột biến, dấn thân vào hành trình đến với số phận trong thế giới hỗn loạn mà con người còn ác độc hơn cả quỷ dữ.",
+    "episode": 8,
+    "totalView": 1000000,
+    "viewBymonth": 10000,
+    "viewByweek": 3000,
+    "rate": 4.5,
+    "rateTime": 60000,
+    "year": 2019,
+    "time": 60,
+    "directerList": [
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Alik Sakharov"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Charlotte Brändström"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Alex Garcia Lopez"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Marc Jobst"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Edward Bazalgette"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Louise Hooper"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Sarah O'Gorman"
+      },
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Stephen Surjik"
+      }
+    ],
+    "writerList": [
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Andrzej Sapkowski"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Lauren Schmidt"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Haily Hall"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Declan De Barra"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Beau DeMayo"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Jenny Klein"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Sneha Koorse"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Mike Ostrowski"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Clare Higgins"
+      }
+    ],
+    "castList": [
+      {
+        "id": "es",
+        "image": "https://m.media-amazon.com/images/M/MV5BODI0MTYzNTIxNl5BMl5BanBnXkFtZTcwNjg2Nzc0NA@@._V1_UY44_CR2,0,32,44_AL_.jpg",
+        "name": "Henry Cavill"
+      },
+      {
+        "id": "mn",
+        "image": "https://m.media-amazon.com/images/M/MV5BZTYxMDc0Y2UtZWJjYi00Yjk1LWE5NWQtMGNmMmVhNzkwYmQ4XkEyXkFqcGdeQXVyMTI5Njc2ODg3._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Freya Allan"
+      },
+      {
+        "id": "bc",
+        "image": "https://m.media-amazon.com/images/M/MV5BN2ZjOGVmMTgtZTJmNS00MWFjLTk5MWEtYmYzY2M0YzEyN2U0XkEyXkFqcGdeQXVyMTA1MDUzMjgx._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Anya Chalotra"
+      },
+      {
+        "id": "jb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTQ1MDdkMjUtOTA5YS00YjA5LWFiNGQtOGM0YWYyMjU3N2YwXkEyXkFqcGdeQXVyNDk5MzM3Mzg@._V1_UY44_CR4,0,32,44_AL_.jpg",
+        "name": "Mimi Ndiweni"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BY2RhZmEyNmYtZWYzYy00NDM2LTg4MjQtOTQ4M2VjZmUzZWI3XkEyXkFqcGdeQXVyNjc5Mjg0NjU@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Eamon Farren"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjcxNDgzMDE3Ml5BMl5BanBnXkFtZTgwODI2Njc3MDI@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "MyAnna Buring"
+      },
+      {
+        "id": "wd",
+        "image": "https://m.media-amazon.com/images/M/MV5BZjlmOTgzMDctZDA0OC00YjY4LTljNTktYjExOTgxNGY0MmM0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX32_CR0,0,32,44_AL_.jpg ",
+        "name": "Wilson Mbomio"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BYjA2ODZhNDYtMTRiMC00NDRkLTk3NDAtMzkyYTZhOTgxZjJhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Anna Shaffer"
+      },
+      {
+        "id": "bw",
+        "image": "https://m.media-amazon.com/images/M/MV5BYmRmYmVlZGQtNjg1NS00MDc4LWJjYWUtZmZhN2ViMzY3YzkxXkEyXkFqcGdeQXVyNDI1MzMzNTI@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Joey Batey"
+      },
+      {
+        "id": "tr",
+        "image": "https://m.media-amazon.com/images/M/MV5BOTZjZmE0NzYtZDhiMC00ZTI0LWE1MzMtMzY0OTkyMDQ3NmQ0XkEyXkFqcGdeQXVyMjk0ODkzNTc@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Royce Pierreson"
+      },
+      {
+        "id": "mt",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Tom Canton"
+      },
+      {
+        "id": "ar",
+        "image": "https://m.media-amazon.com/images/M/MV5BODViM2JhMDAtMjg2Ni00NGFjLThiMDEtNGVmZTJhNmQwYWYwXkEyXkFqcGdeQXVyNTgzODg0MTc@._V1_UY44_CR5,0,32,44_AL_.jpg",
+        "name": "Yasen Atour"
+      },
+      {
+        "id": "hb",
+        "image": "https://m.media-amazon.com/images/M/MV5BOTI3NGJlMmUtY2I2Yy00MDQ3LTlhOTEtZmM5ZjMxOGJjZDlhXkEyXkFqcGdeQXVyNjQzMjMyNDI@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Basil Eidenbenz"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BN2QwYzFlZGMtODdkMy00YTExLThhMTAtNjEyMjlhNzcxZmY3XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Lars Mikkelsen"
+      },
+      {
+        "id": "pn",
+        "image": "https://m.media-amazon.com/images/M/MV5BNTcyZTAyZjQtODM5Yy00MDNmLWI1NDYtZTk4NjQ1MWUwNWRlXkEyXkFqcGdeQXVyNTI2MzExOTg@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Mecia Simson"
+      },
+      {
+        "id": "ms",
+        "image": "https://m.media-amazon.com/images/M/MV5BYWRlN2RkYTQtZTNlYy00M2VlLWI4MzktY2Y1OGFjMGQ1MDgxXkEyXkFqcGdeQXVyMjc4MDQxMDQ@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Adam Levy"
+      },
+      {
+        "id": "hk",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjA1NzYzNzYwMl5BMl5BanBnXkFtZTgwOTY3NjI3NTM@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Kim Bodnia"
+      },
+      {
+        "id": "jbs",
+        "image": "https://m.media-amazon.com/images/M/MV5BYjA5OGI4ZWEtZjFmOS00ZGNkLThiODYtMWY1NzMwYWYxZDY0XkEyXkFqcGdeQXVyNDYyMjkzNTA@._V1_UY44_CR6,0,32,44_AL_.jpg",
+        "name": "Paul Bullion"
+      },
+      {
+        "id": "ef",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjkzNTg0YzAtZGViYS00OTE1LWFhMmQtZWQ5NDE3MzlkY2Q2XkEyXkFqcGdeQXVyMTIwNzMzNTgz._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Jota Castellano"
+      },
+      {
+        "id": "jks",
+        "image": "https://m.media-amazon.com/images/M/MV5BNDkyNmIzYjAtNzkzOC00ZDAxLTkxNTUtNmMyMmU2MGRmNmFjXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Mahesh Jadu"
+      }
+    ],
+    "categoryList": [
+      {
+        "id": "hanhdong",
+        "name": "Hành động"
+      },
+      {
+        "id": "tv-series",
+        "name": "TV Series"
+      },
+      {
+        "id": "phieuluu",
+        "name": "Phiêu lưu"
+      },
+      {
+        "id": "drama",
+        "name": "Giật gân"
+      }
+    ],
+    "country": {
+      "id": "aumy",
+      "name": "Âu Mỹ"
+    }
+  },
+  {
+    "id": "thelastduel",
+    "name": "Trận Đấu Cuối Cùng",
+    "originalName": "The Last Duel",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGExZTUzYWQtYWJjZi00OTI4LTk4OGYtNTA2YzcwMmNiZTMxXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "wallpaper": "https://thefranchisehound.com/wp-content/uploads/2021/09/Untitled-design-93.jpg",
+    "thumb": "https://www.joblo.com/wp-content/uploads/2021/11/ridley-scott-speaks-on-the-poor-box-office-performance-of-the-last-duel-1024x538.jpeg",
+    "content": "The Last Duel được chuyển thể từ cuốn tiểu thuyết cùng tên của tác giả Eric Jager năm 2004, kể về trận tử chiến giữa hiệp sĩ Jean de Carrouges và hộ vệ Jacques Le Gris. Hai người đàn ông này vốn là bạn thân của nhau nhưng mâu thuẫn dần nảy sinh trong quá trình thăng tiến của mỗi người và đạt đến đỉnh điểm khi vợ của Jean de Carouges cáo buộc Jacques Le Gris cưỡng bức bà trong một lần chồng vắng nhà. Thực hư của chuyện này là gì và làm sao để giải quyết mâu thuẫn trên? Xem phim để khám phá ra đáp án rất thú vị và trần trụi các bạn nha.",
+    "episode": 1,
+    "totalView": 750000,
+    "viewBymonth": 100000,
+    "viewByweek": 60000,
+    "rate": 4.5,
+    "rateTime": 30000,
+    "year": 2021,
+    "time": 152,
+    "directerList": [
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Ridley Scott"
+      }
+    ],
+    "writerList": [
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Nicole Holofcener"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Ben Affleck"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Matt Damon"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Eric Jager"
+      }
+    ],
+    "castList": [
+      {
+        "id": "es",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTM0NzYzNDgxMl5BMl5BanBnXkFtZTcwMDg2MTMyMw@@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Matt Damon"
+      },
+      {
+        "id": "mn",
+        "image": "https://m.media-amazon.com/images/M/MV5BOWViYjUzOWMtMzRkZi00MjNkLTk4M2ItMTVkMDg5MzE2ZDYyXkEyXkFqcGdeQXVyODQwNjM3NDA@._V1_UY44_CR5,0,32,44_AL_.jpg",
+        "name": "Adam Driver"
+      },
+      {
+        "id": "bc",
+        "image": "https://m.media-amazon.com/images/M/MV5BZmViMjQxYTUtZDExNy00NjU1LWI4MmEtY2RhODRkMzNkODM1XkEyXkFqcGdeQXVyNjkwNzEwMzY@._V1_UY44_CR6,0,32,44_AL_.jpg",
+        "name": "Jodie Comer"
+      },
+      {
+        "id": "jb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTk1Nzc4Mjc4OF5BMl5BanBnXkFtZTcwNjE1OTEzNw@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Harriet Walter"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BMzczNzNiMDAtMmUzZS00MTkwLWIwOTYtNmYyNjg3MTVkNThhXkEyXkFqcGdeQXVyMjA4MjI5MTA@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Ben Affleck"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjI2OTk0NDM4OV5BMl5BanBnXkFtZTgwMTc2MTUyMDI@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Alex Lawther"
+      },
+      {
+        "id": "wd",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjQxOTcyNDEyMV5BMl5BanBnXkFtZTgwMjMzMzYyNTE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Marton Csokas"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BYTAzYTcyMjItY2I4OS00ZTRhLWExY2MtOWY5MjVmYzkzYzU2XkEyXkFqcGdeQXVyMTMwNTQyMTI@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "William Houston"
+      },
+      {
+        "id": "bw",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTg1ODYxMjg2OV5BMl5BanBnXkFtZTgwODA5MTIwMTE@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Oliver Cotton"
+      },
+      {
+        "id": "tr",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Aurélien Lorgnier"
+      },
+      {
+        "id": "mt",
+        "image": "https://m.media-amazon.com/images/M/MV5BOGU4MzlmZDctOTIzNi00ZmIwLTk2ZjMtYTJjMTRmNmI4ZjU0XkEyXkFqcGdeQXVyMjU0OTQ1ODk@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Nathaniel Parker"
+      },
+      {
+        "id": "ar",
+        "image": "https://m.media-amazon.com/images/M/MV5BYzUxYzk5YmMtNmU5My00MTNiLTk4MDEtNmQzZGJiMGIyY2Q0XkEyXkFqcGdeQXVyNTg1NTY5MjQ@._V1_UY44_CR2,0,32,44_AL_.jpg",
+        "name": "Tallulah Haddon"
+      },
+      {
+        "id": "hb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjMwMTEwOTg1M15BMl5BanBnXkFtZTgwNDAxNjY4ODE@._V1_UY44_CR13,0,32,44_AL_.jpg",
+        "name": "Bryony Hannah"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Thomas Silberstein"
+      },
+      {
+        "id": "pn",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Adam Goodwin"
+      },
+      {
+        "id": "ms",
+        "image": "https://m.media-amazon.com/images/M/MV5BYzc1YTU4M2YtNjNiMy00NmNjLTgxNDEtM2U0ZjQ1NGVhNmZhXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Ian Pirie"
+      },
+      {
+        "id": "hk",
+        "image": "https://m.media-amazon.com/images/M/MV5BZWRkZjAxY2EtODVlZS00YzY2LWE3MzgtM2FhZGZkZjIxYWRiXkEyXkFqcGdeQXVyMTI0Mjc0Njgy._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Daniel Horn"
+      },
+      {
+        "id": "jbs",
+        "image": "https://m.media-amazon.com/images/M/MV5BMWM5MTU5ZTEtNzEwOS00MmU5LTkwMzItYzI2ZjU0Zjk1NTFiXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Michael McElhatton"
+      },
+      {
+        "id": "ef",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTY0NjY5ODU3OV5BMl5BanBnXkFtZTgwMjUzNDk0MDI@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Sam Hazeldine"
+      },
+      {
+        "id": "jks",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjA5MDY2NDI3OF5BMl5BanBnXkFtZTcwMzcyOTgxOA@@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Clive Russell"
+      }
+    ],
+    "categoryList": [
+      {
+        "id": "hanhdong",
+        "name": "Hành động"
+      },
+      {
+        "id": "lichsu",
+        "name": "Lịch sử"
+      },
+      {
+        "id": "phieuluu",
+        "name": "Phiêu lưu"
+      }
+    ],
+    "country": {
+      "id": "aumy",
+      "name": "Âu Mỹ"
+    }
+  },
+  {
+    "id": "cruella",
+    "name": "Cruella",
+    "originalName": "Cruella",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWI5YTUxOWEtZmRiZS00ZmQxLWE2NzctYTRiODA2NzE1ZjczXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "wallpaper": "https://m.media-amazon.com/images/M/MV5BODNhMzVmMGQtNjI0YS00ODdkLWE3OTUtYjU3MDQ3OTM3N2QwXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_FMjpg_UX1280_.jpg",
+    "thumb": "https://m.media-amazon.com/images/M/MV5BZDRlMTVkMDAtNjAwZC00NDY1LTkyODItZjMwYmEzMzg3NzBlXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_FMjpg_UX1280_.jpg",
+    "content": "Cruella là bản live action về phần tiền truyện của một trong những nhân vật phản diện mang tính biểu tượng, huyền thoại Cruella de Vil. “Cruella” lấy bối cảnh ở London những năm 1970 theo chân cô lao công thông minh & sáng tạo Estella với quyết tâm làm nên tên tuổi từ những thiết kế của mình. Cô kết giao với 2 kẻ trộm luôn đánh giá cao tham vọng và sự nghịch ngợm của cô và họ cùng nhau gây dựng tên tuổi ở khu phố London. Một ngày nọ, sự nhạy bén về thời trang của Estella đã lọt vào mắt xanh của bà Nam tước von Hallman, một huyền thoại thời trang, người phụ nữ sang trọng nhưng không kém vẻ đáng sợ. Nhưng mối quan hệ của họ dẫn đến những sự kiện và khiến Estella bước vào con đường để trở thành một người đậm chất thời trang nhưng tàn ác và đầy lòng hận thù - Cruella.",
+    "episode": 1,
+    "totalView": 1500000,
+    "viewBymonth": 500000,
+    "viewByweek": 300000,
+    "rate": 4.5,
+    "rateTime": 30000,
+    "year": 2021,
+    "time": 134,
+    "directerList": [
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Craig Gillespie"
+      }
+    ],
+    "writerList": [
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Dana Fox"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Tony McNamara"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Aline Brosh McKenna"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Kelly Marcel"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Steve Zissis"
+      },
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Dodie Smith"
+      }
+    ],
+    "castList": [
+      {
+        "id": "es",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjI4NjM1NDkyN15BMl5BanBnXkFtZTgwODgyNTY1MjE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Emma Stone"
+      },
+      {
+        "id": "mn",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTMwNTAyOTg0MF5BMl5BanBnXkFtZTcwNTg0MzY1Mw@@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Emma Thompson"
+      },
+      {
+        "id": "bc",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTY2OTU0NzM1MV5BMl5BanBnXkFtZTgwMzM5ODU5NTE@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Joel Fry"
+      },
+      {
+        "id": "jb",
+        "image": "https://m.media-amazon.com/images/M/MV5BOTZlODQwZjAtMzMyYy00NmRjLTkxYTMtOTNmZDE4Zjc4MjExXkEyXkFqcGdeQXVyMjk0NjI0MQ@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Paul Walter Hauser"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjk2NTE3Y2YtYjQ5YS00NTVmLWI5NGMtNTVlMTBjMWNjMGJjXkEyXkFqcGdeQXVyMTk2ODAxMTk@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "John McCrea"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BMzIzYzNkZGMtOGM5Yy00MmY4LWI0NmYtNTliNTliYTY4ZTM4XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Emily Beecham"
+      },
+      {
+        "id": "wd",
+        "image": "https://m.media-amazon.com/images/M/MV5BMDMyZTk5YWQtODNmMy00NDBkLThjMmYtOWEzZWJkOTQxZDc1XkEyXkFqcGdeQXVyMDQxMDEwMw@@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Mark Strong"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTQ0NzY1NDAxNF5BMl5BanBnXkFtZTcwNTY1NTEzMQ@@._V1_UY44_CR4,0,32,44_AL_.jpg",
+        "name": "Kayvan Novak"
+      },
+      {
+        "id": "bw",
+        "image": "https://m.media-amazon.com/images/M/MV5BZTJhNjY4NDAtYmI5MS00M2Q3LWJmYmQtMjNlZTQzNTU2ZmVjXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR8,0,32,44_AL_.jpg",
+        "name": "Kirby Howell-Baptiste"
+      },
+      {
+        "id": "tr",
+        "image": "https://m.media-amazon.com/images/M/MV5BNzJkYWM2MDgtYTcwYy00MTdlLTkzMTktNjVmZjczOWU2MGRhXkEyXkFqcGdeQXVyNDQwNDYwNTM@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Jamie Demetriou"
+      },
+      {
+        "id": "mt",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTU5YjU3ZWItMWVkMS00NzkwLWI4YTEtODY3NDc0MjNiODY5XkEyXkFqcGdeQXVyMTE2NjQ1NDU5._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Niamh Lynch"
+      },
+      {
+        "id": "ar",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Andrew Leung"
+      },
+      {
+        "id": "hb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMDM4ZjM4OTUtOGIxZS00NTMxLWJlM2MtYWFiNmI1MmU5NjMxXkEyXkFqcGdeQXVyMzcwMjcxNDE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Ed Birch"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Dylan Lowe"
+      },
+      {
+        "id": "pn",
+        "image": "https://m.media-amazon.com/images/M/MV5BMGRmM2QzOTgtZThiOC00Y2NhLTkzNDMtNTk5YjkyYzFlYTc1XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR4,0,32,44_AL_.jpg",
+        "name": "Paul Bazely"
+      },
+      {
+        "id": "ms",
+        "image": "https://m.media-amazon.com/images/M/MV5BZjNiYzMwN2MtMzBjNS00ZDg2LWJhNmUtNWRhZmJkMTBiMDlhXkEyXkFqcGdeQXVyNTIxNDM5MDU@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Abraham Popoola"
+      },
+      {
+        "id": "hk",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTU0NTU3NjEyNl5BMl5BanBnXkFtZTcwMjA1Njk1MQ@@._V1_UY44_CR6,0,32,44_AL_.jpg",
+        "name": "Leo Bill"
+      },
+      {
+        "id": "jbs",
+        "image": "https://m.media-amazon.com/images/M/MV5BMDYzZjQ3M2EtMzA5MC00NTRhLWE3YTgtMTRkZWM0MmU5NmRkXkEyXkFqcGdeQXVyNTY1OTI5NTE@._V1_UY44_CR3,0,32,44_AL_.jpg",
+        "name": "Ninette Finch"
+      },
+      {
+        "id": "ef",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTk1NTY5MDk4MV5BMl5BanBnXkFtZTgwNjk5NjY4NDE@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Sarah Crowden"
+      },
+      {
+        "id": "jks",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Harrison Willmott"
+      }
+    ],
+    "categoryList": [
+      {
+        "id": "hanhdong",
+        "name": "Hành động"
+      },
+      {
+        "id": "haihuoc",
+        "name": "Hài hước"
+      },
+      {
+        "id": "phieuluu",
+        "name": "Phiêu lưu"
+      }
+    ],
+    "country": {
+      "id": "aumy",
+      "name": "Âu Mỹ"
+    }
+  },
+  {
+    "id": "johnwick",
+    "name": "Sát thủ John Wick",
+    "originalName": "John Wick",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+    "wallpaper": "https://m.media-amazon.com/images/M/MV5BZjJkODFhNjAtYzc1Ny00NjM5LWI4YzItMTZiNWQyY2JmMTRjXkEyXkFqcGdeQXVyNzU3Nzk4MDQ@._V1_FMjpg_UY720_.jpg",
+    "thumb": "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+    "content": "Khi con trai của gã gangster ăn trộm xe và giết chú chó, John Wick, một người đàn ông gan dạ đã vô cùng đau đớn và tìm đến tận hang ổ của bọn tội phạm để báo thù.",
+    "episode": 1,
+    "totalView": 3000000,
+    "viewBymonth": 100000,
+    "viewByweek": 40000,
+    "rate": 4.5,
+    "rateTime": 300000,
+    "year": 2014,
+    "time": 101,
+    "directerList": [
+      {
+        "id": "cs",
+        "image": "",
+        "name": "Chad Stahelski"
+      },
+      {
+        "id": "dl",
+        "image": "",
+        "name": "David Leitch"
+      }
+    ],
+    "writerList": [
+      {
+        "id": "dk",
+        "image": "",
+        "name": "Derek Kolstad"
+      }
+    ],
+    "castList": [
+      {
+        "id": "kr",
+        "image": "https://m.media-amazon.com/images/M/MV5BYTkzODI4MDMtNDNmZC00NDZlLWFmNTktNDRhOWE2YzhlZTQ2XkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Keanu Reeves"
+      },
+      {
+        "id": "mn",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTg1MDM4MTg1NV5BMl5BanBnXkFtZTcwMTExOTcwNw@@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Michael Nyqvist"
+      },
+      {
+        "id": "bc",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjAyMTI1OGYtNWQxMC00ZWJmLTgyOGMtN2RmNDUwZTQ2NTM3XkEyXkFqcGdeQXVyNjk1MjYyNTA@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Alfie Allen"
+      },
+      {
+        "id": "jb",
+        "image": "https://m.media-amazon.com/images/M/MV5BOWU4MTI2OTctODQ1ZS00MGM1LWJkM2EtODE3MGNkNmIyZDEwXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Willem Dafoe"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BNGQ2NWVmMjctOGNjOC00MTZmLWI4OTEtMzQ1ZDg0NzFmOWNjL2ltYWdlXkEyXkFqcGdeQXVyMTU3NjQ2OTk@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Dean Winters"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTQ4MjM4OTA2OF5BMl5BanBnXkFtZTcwNDM3NzIzOQ@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Adrianne Palicki"
+      },
+      {
+        "id": "wd",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTY0MDcxMzc4Nl5BMl5BanBnXkFtZTcwNzk4MjkwNg@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Omer Barnea"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BZmM4NGQzODgtMmE4ZS00MjM1LWIyZDgtYjc0MzZmMmI2NDU2XkEyXkFqcGdeQXVyMTU3NDE3MDU@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Toby Leonard Moore"
+      },
+      {
+        "id": "bw",
+        "image": "https://m.media-amazon.com/images/M/MV5BOWYxZWI5YTUtMjViOS00NGNjLTk4MzMtYjI5MWU0Y2M2YzY3XkEyXkFqcGdeQXVyMTI0MTY0OTAz._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Daniel Bernhardt"
+      },
+      {
+        "id": "tr",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTc0Nzc3ODE3OF5BMl5BanBnXkFtZTcwNDQxOTU3MQ@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Bridget Moynahan"
+      },
+      {
+        "id": "mt",
+        "image": "https://m.media-amazon.com/images/M/MV5BNTEyMjMxNDg5NF5BMl5BanBnXkFtZTcwNzczOTY4MQ@@._V1_UY44_CR2,0,32,44_AL_.jpg",
+        "name": "John Leguizamo"
+      },
+      {
+        "id": "ar",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjg5NDg3OTQtYzMyYS00YjhhLTk2NmEtZTExNGViYTczZTU2XkEyXkFqcGdeQXVyMTU1MTU2MDI@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Ian McShane"
+      },
+      {
+        "id": "hb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMGE2NWNkNTMtYWEyYy00Y2MyLTk4MTAtNTFmNWIyMjUzNDI0XkEyXkFqcGdeQXVyMTU3NDgwMzg@._V1_UY44_CR6,0,32,44_AL_.jpg",
+        "name": "Bridget Regan"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTY0MDkyMjk5OV5BMl5BanBnXkFtZTcwNDUxMzc0Mw@@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Lance Reddick"
+      },
+      {
+        "id": "pn",
+        "image": "https://m.media-amazon.com/images/M/MV5BMmRjMTUyYTctYTIzMy00OTEyLWI0ZWMtNzUxMzY0NmIxMjA5XkEyXkFqcGdeQXVyNDIxMDQ5MTU@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Keith Jardine"
+      },
+      {
+        "id": "ms",
+        "image": "https://m.media-amazon.com/images/M/MV5BNDFkZTAzZjMtMjYwYi00MWU3LThjMDItN2RmMjEwNmQwYTc1XkEyXkFqcGdeQXVyNDc4MzM5Nzk@._V1_UY44_CR6,0,32,44_AL_.jpg",
+        "name": "Tait Fletcher"
+      },
+      {
+        "id": "hk",
+        "image": "https://m.media-amazon.com/images/M/MV5BMmEyNmM0ZTctZmIxYi00NzBlLTkyNWItY2ZlZjVlMGU2NjYxXkEyXkFqcGdeQXVyMjE2OTQzMDU@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Kazy Tauginas"
+      },
+      {
+        "id": "jbs",
+        "image": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+        "name": "Alexander Frekey"
+      },
+      {
+        "id": "ef",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTczNTgzMzI1OV5BMl5BanBnXkFtZTcwMzY5NTUwOA@@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Thomas Sadoski"
+      },
+      {
+        "id": "jks",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTIwMjY3ODY5M15BMl5BanBnXkFyZXN1bWU@._V1_UY44_CR11,0,32,44_AL_.jpg",
+        "name": "Randall Duk Kim"
+      }
+    ],
+    "categoryList": [
+      {
+        "id": "hanhdong",
+        "name": "Hành động"
+      },
+      {
+        "id": "phieuluu",
+        "name": "Phiêu lưu"
+      },
+      {
+        "id": "toipham",
+        "name": "Tội phạm"
+      }
+    ],
+    "country": {
+      "id": "aumy",
+      "name": "Âu Mỹ"
+    }
+  },
+  {
+    "id": "spiderman-mannowayhome",
+    "name": "Người Nhện: Không Còn Nhà",
+    "originalName": "Spider-Man: No Way Home",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "wallpaper": "https://mV5BYmNkOWU5ZTYtNjljMS00ZDQ0LWJhYzItMGQ1NjdmZTRlYzNkXkEyXkFqcGdeQXVyNjc0MTk5MjM@._V1_FMjpg_UX1280_.jpg",
+    "thumb": "https://economictimes.indiatimes.com/thumb/msid-88317664,width-1200,height-900,resizemode-4,imgsize-80252/spider-man-no-way-home-is-also-driving-more-mentions-and-conversations-on-social-media-than-any-other-pandemic-era-release-.jpg?from=mdr",
+    "content": "Lần đầu tiên trong lịch sử điện ảnh của Người Nhện, thân phận người hàng xóm thân thiện bị lật mở, khiến trách nhiệm làm một Siêu Anh Hùng xung đột với cuộc sống bình thường và đặt người anh quan tâm nhất vào tình thế nguy hiểm. Khi anh nhờ đến giúp đỡ của Doctor Strange để khôi phục lại bí mật, phép thuật đã gây ra lỗ hổng thời không, giải phóng những ác nhân mạnh mẽ nhất từng đối đầu với Người Nhện từ mọi vũ trụ. Bây giờ, Peter sẽ phải vượt qua thử thách lớn nhất của mình, nó sẽ thay đổi không chỉ tương lai của chính anh mà còn là tương lai của cả Đa Vũ Trụ.",
+    "episode": 1,
+    "totalView": 500000,
+    "viewBymonth": 45000,
+    "viewByweek": 10000,
+    "rate": 4.5,
+    "rateTime": 30000,
+    "year": 2021,
+    "time": 149,
+    "directerList": [
+      {
+        "id": "jonwatts",
+        "name": "Jon Watts"
+      }
+    ],
+    "writerList": [
+      {
+        "id": "chrismckenna",
+        "image": "",
+        "name": "Chris McKenna"
+      },
+      {
+        "id": "eriksommers",
+        "image": "",
+        "name": "Erik Sommers"
+      },
+      {
+        "id": "stanlee",
+        "image": "",
+        "name": "Stan Lee"
+      },
+      {
+        "id": "steveditko",
+        "image": "",
+        "name": "Steve Ditko"
+      }
+    ],
+    "castList": [
+      {
+        "id": "th",
+        "image": "https://m.media-amazon.com/images/M/MV5BNzZiNTEyNTItYjNhMS00YjI2LWIwMWQtZmYwYTRlNjMyZTJjXkEyXkFqcGdeQXVyMTExNzQzMDE0._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Tom Holland"
+      },
+      {
+        "id": "z",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjAxZTk4NDAtYjI3Mi00OTk3LTg0NDEtNWFlNzE5NDM5MWM1XkEyXkFqcGdeQXVyOTI3MjYwOQ@@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Zendaya"
+      },
+      {
+        "id": "bc",
+        "image": "https://m.media-amazon.com/images/M/MV5BOTc0ZGQwMTAtNGM5Zi00OGZjLTlmMWMtZDNjN2M3YjNmMmUyXkEyXkFqcGdeQXVyMjI2MDYzNDE@._V1_UY44_CR6,0,32,44_AL_.jpg",
+        "name": "Benefit Cumberbatch"
+      },
+      {
+        "id": "jb",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTJmMDA1ODUtYWI0NS00MjA4LWFiZjgtOTk1OGQ3MDQ4Mjg4XkEyXkFqcGdeQXVyMTA1MTQ2ODk1._V1_UY44_CR16,0,32,44_AL_.jpg",
+        "name": "Jacob Batalon"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BNjcwNzg4MjktNDNlMC00M2U1LWJmMjgtZTVkMmI4MDI2MTVmXkEyXkFqcGdeQXVyMjI4MDI0NTM@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Jon Favreau"
+      },
+      {
+        "id": "jf",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTkyNjY1NDg3NF5BMl5BanBnXkFtZTgwNjA2MTg0MzE@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Jamie Foxx"
+      },
+      {
+        "id": "wd",
+        "image": "https://m.media-amazon.com/images/M/MV5BOWU4MTI2OTctODQ1ZS00MGM1LWJkM2EtODE3MGNkNmIyZDEwXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Willem Dafoe"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTEwNTgzNzgxNzNeQTJeQWpwZ15BbWU3MDQ5NzU1NjM@._V1_UY44_CR1,0,32,44_AL_.jpg",
+        "name": "Alfred Molina"
+      },
+      {
+        "id": "bw",
+        "image": "https://m.media-amazon.com/images/M/MV5BNTNlMjg3NWQtZmJlNS00NGU2LWI5NWMtZDk2MGI1YTI4YTVkXkEyXkFqcGdeQXVyMTgyMzY5MTk@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Benedict Wong"
+      },
+      {
+        "id": "tr",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjgyNGIyZmMtMTFlYy00OWE5LWE2Y2QtYjhhOGU0NzM4YzliXkEyXkFqcGdeQXVyMzk0NzA4MDc@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Tony Revolori"
+      },
+      {
+        "id": "mt",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTUwMjA3OTc3N15BMl5BanBnXkFtZTcwNTA1MzY1Mw@@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "Marisa Tomei"
+      },
+      {
+        "id": "ar",
+        "image": "https://m.media-amazon.com/images/M/MV5BMzhkMTczYWEtOThmYS00MDEyLTgzZjAtODE5YTUwMmJiMjAzXkEyXkFqcGdeQXVyOTE0NjgwMjY@._V1_UY44_CR2,0,32,44_AL_.jpg",
+        "name": "Angourie Rice"
+      },
+      {
+        "id": "hb",
+        "image": "https://m.media-amazon.com/images/M/MV5BNWMwODM2ZmMtZjdkNi00MDFhLTkxYzItMDQzYTkzZDNmNmI0XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Hannibal Buress"
+      },
+      {
+        "id": "am",
+        "image": "https://m.media-amazon.com/images/M/MV5BYmVmNjUyNmUtNTIwZC00NGZjLWI5YWEtYmI3YjM3MzhmZWNhXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR8,0,32,44_AL_.jpg",
+        "name": "Arian Moayed"
+      },
+      {
+        "id": "pn",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjI2NzIwNTQ1N15BMl5BanBnXkFtZTgwMTQzNTc4NDE@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Paula Newsome"
+      },
+      {
+        "id": "ms",
+        "image": "https://m.media-amazon.com/images/M/MV5BYmQ3NDdjNzMtZWIyMC00OWRhLTgzNDYtZDlkMmE4YWY5YTEyXkEyXkFqcGdeQXVyNjc5Mjg0NjU@._V1_UY44_CR17,0,32,44_AL_.jpg",
+        "name": "Martin Starr"
+      },
+      {
+        "id": "hk",
+        "image": "https://m.media-amazon.com/images/M/MV5BZWZhNWQ2NDUtYzViYy00OWRjLTk4NjYtOGVjZTEwZDQ4Y2Y1XkEyXkFqcGdeQXVyNzUwMTAyMDg@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "Haroon Khan"
+      },
+      {
+        "id": "jbs",
+        "image": "https://m.media-amazon.com/images/M/MV5BNjI1NjI3NDQzOF5BMl5BanBnXkFtZTcwMzYzMDQ1NA@@._V1_UY44_CR0,0,32,44_AL_.jpg",
+        "name": "J.B. Smoove"
+      },
+      {
+        "id": "ef",
+        "image": "https://m.media-amazon.com/images/M/MV5BMzg2NTI5NzQ1MV5BMl5BanBnXkFtZTgwNjI1NDEwMDI@._V1_UY44_CR2,0,32,44_AL_.jpg",
+        "name": "Emily Fong"
+      },
+      {
+        "id": "jks",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTkyMzU0NDM4Ml5BMl5BanBnXkFtZTcwMDkzMDg5Nw@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+        "name": "J.K. Simmons"
+      }
+    ],
+    "categoryList": [
+      {
+        "id": "hanhdong",
+        "name": "Hành động"
+      },
+      {
+        "id": "phieuluu",
+        "name": "Phiêu lưu"
+      }
+    ],
+    "country": {
+      "id": "aumy",
+      "name": "Âu Mỹ"
+    }
+  }
+]

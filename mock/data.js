@@ -1,3 +1,4 @@
+import films from './film.json';
 export const data = {
   users: [
     {
@@ -167,4 +168,5 @@ export const data = {
       name: 'Tổng Hợp',
     },
   ],
+  films: films,
 };

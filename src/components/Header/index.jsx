@@ -5,6 +5,7 @@ import styles from './styles.less';
 import './styles.less';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState } from 'react';
+import SearchInput from './components/SearchBar';
 
 export default function Header(props) {
   const [isLogin, setIsLogin] = useState(
@@ -84,11 +85,7 @@ export default function Header(props) {
             </Row>
           </Col>
           <Col flex="auto" style={{ maxWidth: '300px' }}>
-            <Input
-              prefix={<SearchOutlined />}
-              placeholder="Nhập từ khóa để tìm kiếm"
-              style={{ borderRadius: '5px' }}
-            />
+            <SearchInput />
           </Col>
           <Col>
             {isLogin ? (
