@@ -68,22 +68,28 @@ const NextArrow = (props) => {
 // };
 
 const CastCarousel = ({ castList }) => {
+  let tmpArr = [];
+  for (let i = 0; i < castList.length; i += 4) {
+    tmpArr.push(castList.slice(i, i + 4));
+  }
+
   return (
     <Carousel
       arrows
       //prevArrow={<PrevArrow />}
       nextArrow={<NextArrow />}
     >
-      <Row className={styles['cast-carousel']} justify="space-around">
-        {castList.map((cast, index) => (
-          <CastCard castInfo={cast} key={index} />
-        ))}
-      </Row>
-      <Row className={styles['cast-carousel']} justify="space-around">
-        {castList.map((cast, index) => (
-          <CastCard castInfo={cast} key={index} />
-        ))}
-      </Row>
+      {tmpArr.map((arr, index1) => (
+        <Row
+          key={index1}
+          className={styles['cast-carousel']}
+          justify="space-around"
+        >
+          {arr.map((cast, index2) => (
+            <CastCard castInfo={cast} key={index2} />
+          ))}
+        </Row>
+      ))}
     </Carousel>
   );
 };
@@ -92,13 +98,13 @@ export default function FilmDetail({
   vnName,
   enName,
   time,
-  view,
   type,
   description,
   rate,
   rateTime,
   castList,
   directerList,
+  totalView,
 }) {
   const { slug } = useParams();
   return (
@@ -122,7 +128,7 @@ export default function FilmDetail({
         </Col>
         <Col>
           <Text>
-            <EyeOutlined /> {view} lượt xem
+            <EyeOutlined /> {totalView} lượt xem
           </Text>
         </Col>
       </Row>
@@ -153,7 +159,9 @@ export default function FilmDetail({
       <div className={styles.detail}>
         <Text>
           <b>Đạo diễn: </b>
-          {directerList[0].name}
+          {directerList?.map((directer, index) => (
+            <span key={index}>{directer.name}, </span>
+          ))}
         </Text>
       </div>
       <div className={styles.detail}>
