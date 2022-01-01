@@ -106,6 +106,7 @@ export default function Payment(props) {
                   padding: '2px 4px 2px 4px',
                   border: 'none',
                   textAlign: 'right',
+                  fontWeight: 'bold',
                 }}
                 value={coupon}
                 onChange={enterCoupon}
@@ -474,7 +475,7 @@ const imgStyle = {
 const errorMsg = { color: '#ff7675', marginBottom: '6px', marginTop: '4px' };
 
 const inputStyle = {
-  color: 'black',
+  color: 'white',
   borderRadius: '6px',
   maxWidth: '400px',
   padding: '5px 10px',
