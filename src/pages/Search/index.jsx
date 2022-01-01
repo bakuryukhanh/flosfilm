@@ -20,7 +20,7 @@ const FilmTag = ({ active, text, onClick, style }) => {
   );
 };
 
-const SearchPage = (props) => {
+const SearchPage = (_props) => {
   const [films, setFilms] = useState([]);
   const { slug } = useParams();
   useEffect(() => {

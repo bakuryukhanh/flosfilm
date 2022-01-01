@@ -1,9 +1,8 @@
 import FilmCard from '@/components/FilmCard';
 import { StarFilled } from '@ant-design/icons/lib/icons';
-import { Rate, Space, Typography, Row, Col } from 'antd';
+import { Typography, Row, Col } from 'antd';
 import { Carousel } from 'react-responsive-carousel';
 import styles from './styles.less';
-import { history } from 'umi';
 import {
   requestHolidayFilms,
   requestHollywoodFilms,
@@ -45,7 +44,6 @@ const fakeDataCarousel = [
 
 const CarouselCard = (props) => {
   const { vnName, enName, description, type, time, rate, image } = props;
-  console.log(history);
   return (
     <div className={styles['carousel-card']}>
       <div
@@ -124,6 +122,7 @@ const HomePage = (_props) => {
       type: item.categoryList[0].name,
       image: item.wallpaper,
       slug: item.id,
+      view: item.viewBymonth,
     };
   });
   const holidayfilms = requestHolidayFilms().map((item) => {
@@ -135,6 +134,7 @@ const HomePage = (_props) => {
       type: item.categoryList[0].name,
       image: item.wallpaper,
       slug: item.id,
+      view: item.viewBymonth,
     };
   });
   const hollywoodFilms = requestHollywoodFilms().map((item) => {
@@ -146,6 +146,7 @@ const HomePage = (_props) => {
       type: item.categoryList[0].name,
       image: item.wallpaper,
       slug: item.id,
+      view: item.viewBymonth,
     };
   });
   return (

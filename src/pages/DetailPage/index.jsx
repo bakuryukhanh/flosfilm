@@ -209,7 +209,7 @@ export default function index() {
   }, [slug]);
 
   const handleRedirect = useCallback(() => {
-    history.push(`/watch/${params.id}`);
+    history.push(`/watch/${slug}`);
   }, [history]);
 
   const handleRate = useCallback(
@@ -343,7 +343,7 @@ export default function index() {
             </Col>
           </Row>
         </Form>
-        <div style={{ overflow: 'auto', height: 680, margin: '2rem 6rem' }}>
+        <div className={styles['comment-container']}>
           {comments?.map((comment, index) => (
             <Comment {...comment} key={index} />
           ))}
