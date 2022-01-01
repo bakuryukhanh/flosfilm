@@ -33,5 +33,14 @@ export const requestFilmDetails = (slug) => {
     image: item.wallpaper,
     description: item.content,
     thumbImage: item.thumb,
+    poster: item.poster,
+    castList: item.castList,
+    directerList: item.directerList,
+    totalView: item.totalView,
+    rateTime: item.rateTime,
   };
+};
+export const requestRelevantFilms = () => {
+  const { films } = data;
+  return films.slice(8, 11);
 };

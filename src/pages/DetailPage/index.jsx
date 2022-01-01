@@ -19,7 +19,7 @@ import Comment from '@/components/Comment';
 import FilmCard from '@/components/FilmCard';
 import { useParams, history } from 'umi';
 import { useCallback, useEffect, useState } from 'react';
-import { requestFilmDetails } from '@/service';
+import { requestFilmDetails, requestRelevantFilms } from '@/service';
 
 const filmDetailFake = {
   vnName: 'Hiệp sĩ xanh',
@@ -103,56 +103,56 @@ const filmDetailFake = {
 
 let data = [
   {
-    avatar: 'https://joeschmoe.io/api/v1/random',
+    avatar: 'http://simpleicon.com/wp-content/uploads/user1.svg',
     username: 'Nguyễn Văn A',
     content: 'Bộ phim quá xuất sắc',
     rate: 5,
     commentDate: '25/12/2021',
   },
   {
-    avatar: 'https://joeschmoe.io/api/v1/random',
+    avatar: 'http://simpleicon.com/wp-content/uploads/user1.svg',
     username: 'Nguyễn Văn B',
     content: 'Bộ phim quá xuất sắc',
     rate: 4,
     commentDate: '25/12/2021',
   },
   {
-    avatar: 'https://joeschmoe.io/api/v1/random',
+    avatar: 'http://simpleicon.com/wp-content/uploads/user1.svg',
     username: 'Nguyễn Văn C',
     content: 'Bộ phim quá xuất sắc',
     rate: 4,
     commentDate: '25/12/2021',
   },
   {
-    avatar: 'https://joeschmoe.io/api/v1/random',
+    avatar: 'http://simpleicon.com/wp-content/uploads/user1.svg',
     username: 'Nguyễn Văn D',
     content: 'Bộ phim quá xuất sắc',
     rate: 4.5,
     commentDate: '25/12/2021',
   },
   {
-    avatar: 'https://joeschmoe.io/api/v1/random',
+    avatar: 'http://simpleicon.com/wp-content/uploads/user1.svg',
     username: 'Nguyễn Văn E',
     content: 'Bộ phim quá xuất sắc',
     rate: 5,
     commentDate: '25/12/2021',
   },
   {
-    avatar: 'https://joeschmoe.io/api/v1/random',
+    avatar: 'http://simpleicon.com/wp-content/uploads/user1.svg',
     username: 'Nguyễn Văn F',
     content: 'Bộ phim quá xuất sắc',
     rate: 5,
     commentDate: '25/12/2021',
   },
   {
-    avatar: 'https://joeschmoe.io/api/v1/random',
+    avatar: 'http://simpleicon.com/wp-content/uploads/user1.svg',
     username: 'Nguyễn Văn G',
     content: 'Bộ phim quá xuất sắc',
     rate: 5,
     commentDate: '25/12/2021',
   },
   {
-    avatar: 'https://joeschmoe.io/api/v1/random',
+    avatar: 'http://simpleicon.com/wp-content/uploads/user1.svg',
     username: 'Nguyễn Văn H',
     content: 'Bộ phim quá xuất sắc',
     rate: 4.5,
@@ -160,40 +160,7 @@ let data = [
   },
 ];
 
-const fakeDataCarousel = [
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    view: '5k',
-    percent: 50,
-  },
-];
-
-export default function index() {
+export default function DetailPage() {
   const val = localStorage.getItem('rate');
   const { slug } = useParams();
   const localComments = localStorage.getItem('comments');
@@ -202,6 +169,7 @@ export default function index() {
     localComments ? JSON.parse(localComments) : data,
   );
   const [filmDetail, setFilmDetail] = useState(filmDetailFake);
+  const [relevantFilms, setRelevantFilms] = useState([]);
 
   useEffect(() => {
     const result = requestFilmDetails(slug);
@@ -224,7 +192,7 @@ export default function index() {
     const date = new Date();
     const userName = localStorage.getItem('userName');
     const data = {
-      avatar: 'https://joeschmoe.io/api/v1/random',
+      avatar: 'http://simpleicon.com/wp-content/uploads/user1.svg',
       username: userName ? userName : 'Ẩn danh',
       content: values.comment,
       rate: rate,
@@ -245,6 +213,26 @@ export default function index() {
 
     localStorage.setItem('comments', JSON.stringify(updatedComments));
   };
+
+  useEffect(() => {
+    const result = requestRelevantFilms().map((item) => {
+      return {
+        vnName: item.name,
+        enName: item.originalName,
+        rate: item.rate,
+        time: item.time,
+        type: item.categoryList[0].name,
+        image: item.poster,
+        slug: item.id,
+        view: item.totalView,
+      };
+    });
+    setRelevantFilms(result);
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -269,7 +257,7 @@ export default function index() {
             <Col span={6}>
               <Row gutter={[16, 16]}>
                 <Col span={24}>
-                  <Poster image={filmDetail.image} />
+                  <Poster image={filmDetail.poster} />
                 </Col>
                 <Col span={24}>
                   <Button
@@ -313,7 +301,7 @@ export default function index() {
           <Row align="middle" style={{ marginTop: 50 }}>
             <Col span={3} style={{ textAlign: 'center' }}>
               <Avatar
-                src="https://joeschmoe.io/api/v1/random"
+                src="http://simpleicon.com/wp-content/uploads/user1.svg"
                 className={styles.avatar}
               />
             </Col>
@@ -359,15 +347,11 @@ export default function index() {
           </Col>
         </Row>
         <Row gutter={[30, 30]}>
-          <Col span={8}>
-            <FilmCard {...fakeDataCarousel[1]} filmCardType="relevantFilm" />
-          </Col>
-          <Col span={8}>
-            <FilmCard {...fakeDataCarousel[1]} filmCardType="relevantFilm" />
-          </Col>
-          <Col span={8}>
-            <FilmCard {...fakeDataCarousel[1]} filmCardType="relevantFilm" />
-          </Col>
+          {relevantFilms.map((film, index) => (
+            <Col span={8} key={index}>
+              <FilmCard {...film} filmCardType="relevantFilm" />
+            </Col>
+          ))}
         </Row>
       </div>
     </>

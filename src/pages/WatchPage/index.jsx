@@ -2,63 +2,17 @@ import FilmCard from '@/components/FilmCard';
 import { HeartFilled } from '@ant-design/icons';
 import { Button, Col, Rate, Row, Typography } from 'antd';
 import { useCallback, useEffect, useState } from 'react';
+import { useParams } from 'umi';
 import styles from './styles.less';
-
-const fakeDataCarousel = [
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-    view: '2k',
-    percent: 30,
-  },
-  {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
-    description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-    type: 'Hành động',
-    time: '2 giờ 5 phút',
-    rate: 4.5,
-    image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    thumbImage:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-    view: '5k',
-    percent: 50,
-  },
-];
-
-const filmDetail = {
-  vnName: 'Hiệp sĩ xanh',
-  enName: 'The green knight',
-  description:
-    'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
-  type: 'Hành động',
-  time: '2 giờ 5 phút',
-  rate: 4.5,
-  image:
-    'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
-  thumbImage:
-    'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
-  view: '2k',
-  percent: 30,
-  rate: 4.5,
-  rateTime: 30000,
-};
+import { requestFilmDetails, requestRelevantFilms } from '@/service';
 
 export default function WatchPage() {
   const [isAdded, setIsAdded] = useState(false);
   const val = localStorage.getItem('rate');
   const [rate, setRate] = useState(val ? parseFloat(val) : 0);
+  const [filmDetail, setFilmDetail] = useState({});
+  const { id } = useParams();
+  const [relevantFilms, setRelevantFilms] = useState([]);
 
   const handleAddTOFavoriteList = useCallback(() => {
     setIsAdded(
@@ -81,6 +35,27 @@ export default function WatchPage() {
   useEffect(() => {
     const val = localStorage.getItem('isAdded');
     setIsAdded(val ? true : false);
+  }, []);
+
+  useEffect(() => {
+    const result = requestFilmDetails(id);
+    setFilmDetail(result);
+  }, [id]);
+
+  useEffect(() => {
+    const result = requestRelevantFilms().map((item) => {
+      return {
+        vnName: item.name,
+        enName: item.originalName,
+        rate: item.rate,
+        time: item.time,
+        type: item.categoryList[0].name,
+        image: item.poster,
+        slug: item.id,
+        view: item.totalView,
+      };
+    });
+    setRelevantFilms(result);
   }, []);
 
   return (
@@ -149,15 +124,11 @@ export default function WatchPage() {
           </Col>
         </Row>
         <Row gutter={[30, 30]}>
-          <Col span={8}>
-            <FilmCard {...fakeDataCarousel[1]} filmCardType="relevantFilm" />
-          </Col>
-          <Col span={8}>
-            <FilmCard {...fakeDataCarousel[1]} filmCardType="relevantFilm" />
-          </Col>
-          <Col span={8}>
-            <FilmCard {...fakeDataCarousel[1]} filmCardType="relevantFilm" />
-          </Col>
+          {relevantFilms.map((film, index) => (
+            <Col span={8} key={index}>
+              <FilmCard {...film} filmCardType="relevantFilm" />
+            </Col>
+          ))}
         </Row>
       </div>
     </>
