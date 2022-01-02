@@ -1,5 +1,5 @@
 import { ClockCircleOutlined, EyeOutlined } from '@ant-design/icons/lib/icons';
-import { Card, Progress, Space, Tag, Typography } from 'antd';
+import { Progress, Tag, Typography } from 'antd';
 import { history } from 'umi';
 import styles from './styles.less';
 

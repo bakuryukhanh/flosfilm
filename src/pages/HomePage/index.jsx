@@ -26,17 +26,17 @@ const fakeDataCarousel = [
     percent: 30,
   },
   {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
+    vnName: 'Encanto: Vùng Đất Thần Kỳ',
+    enName: 'Encanto',
     description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
+      'Phim xoay quanh câu chuyện về gia đình Madrigalas sống khép kin tại một căn nhà nằm phía sau núi Colombia. Nơi đây, tràn đầy những ma thuật, thị trấn đầy hài hước và những sinh vật thiên nhiên đầy diệu kỳ, nơi đây còn được gọi là Encanto. Tại đây, khi những đứa trẻ được sinh ra đời, đều được ban phát một sức mạnh đặc biệt có khả năng chữa lành mọi vết thương và sức mạnh dùng để chiến đấu chống lại kẻ xấu.',
     type: 'Hành động',
     time: '2 giờ 5 phút',
     rate: 4.5,
     image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
+      'https://m.media-amazon.com/images/M/MV5BZTk0OGE3ZGEtZjJjZS00MjdhLWExMzEtZGRlZTdkODI5YzYzXkEyXkFqcGdeQXVyMTM0MTkzMzY0._V1_FMjpg_UX988_.jpg',
     thumbImage:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
+      'https://m.media-amazon.com/images/M/MV5BYWMyNjdlMTYtYTk2Yy00NGQ3LTgyOGEtNzZlZTkzYjY0Njg2XkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_FMjpg_UX1086_.jpg',
     view: '5k',
     percent: 50,
   },

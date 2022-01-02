@@ -108,6 +108,9 @@ const SearchPage = (_props) => {
                   percent={0}
                   type={item.categoryList[0].name}
                   style={{ minHeight: '400px' }}
+                  slug={item.id}
+                  view={item.viewBymonth}
+                  time={item.time}
                 />
               ))}
             </div>

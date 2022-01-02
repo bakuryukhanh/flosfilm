@@ -3,43 +3,45 @@ import styles from './styles.less';
 import { Input, Row, Col, Image, Typography } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import { requestSearchFilms } from '@/service';
-import { history } from 'umi';
+import { history, Link } from 'umi';
 
 const FilmSearchList = ({ films }) => {
   return (
     <div className={styles['search-list']}>
       {films.map((film) => {
         return (
-          <Row className={styles['result-row']} align="middle">
-            <Col span={6}>
-              <Image
-                src={film.thumb}
-                height="100px"
-                width="80px"
-                style={{ objectFit: 'cover', borderRadius: '5px' }}
-                preview={false}
-              />
-            </Col>
-            <Col span={18}>
-              <div>
-                <Typography.Title level={5} style={{ color: 'black' }}>
-                  {film.name}
-                </Typography.Title>
-                <p> {film.year}</p>
-                <p
-                  style={{
-                    textOverflow: 'ellipsis',
-                    display: 'block',
-                    maxHeight: '20px',
-                    wordWrap: 'break-word',
-                    overflow: 'hidden',
-                  }}
-                >
-                  {film.writerList.map((item) => item.name).join(', ')}
-                </p>
-              </div>
-            </Col>
-          </Row>
+          <Link to={`/watch/${film.id}`}>
+            <Row className={styles['result-row']} align="middle">
+              <Col span={6}>
+                <Image
+                  src={film.thumb}
+                  height="100px"
+                  width="80px"
+                  style={{ objectFit: 'cover', borderRadius: '5px' }}
+                  preview={false}
+                />
+              </Col>
+              <Col span={18}>
+                <div>
+                  <Typography.Title level={5} style={{ color: 'black' }}>
+                    {film.name}
+                  </Typography.Title>
+                  <p> {film.year}</p>
+                  <p
+                    style={{
+                      textOverflow: 'ellipsis',
+                      display: 'block',
+                      maxHeight: '20px',
+                      wordWrap: 'break-word',
+                      overflow: 'hidden',
+                    }}
+                  >
+                    {film.writerList.map((item) => item.name).join(', ')}
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          </Link>
         );
       })}
     </div>
