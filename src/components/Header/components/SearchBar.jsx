@@ -10,7 +10,7 @@ const FilmSearchList = ({ films }) => {
     <div className={styles['search-list']}>
       {films.map((film) => {
         return (
-          <Link to={`/watch/${film.id}`}>
+          <Link to={`/film-detail/${film.id}`}>
             <Row className={styles['result-row']} align="middle">
               <Col span={6}>
                 <Image
