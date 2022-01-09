@@ -40,33 +40,9 @@ export default function Payment(props) {
           style={{
             flex: 1,
             display: 'flex',
-            padding: '20px',
-            paddingLeft: '50px',
-            flexDirection: 'column',
-          }}
-        >
-          <Typography.Text
-            style={{
-              fontSize: '24px',
-              fontWeight: 'bold',
-              justifySelf: 'flex-start',
-            }}
-          >
-            Phương thức thanh toán
-          </Typography.Text>
-          <ListMethod choosenID={methodID} setID={setMethodID} />
-          <MethodContent methodID={methodID} nMonth={nMonth} packageID={id} />
-        </div>
-        <div
-          style={{
-            flex: 1,
-            display: 'flex',
             alignItems: 'center',
             padding: '20px',
             flexDirection: 'column',
-            borderLeftWidth: '2px',
-            borderColor: 'wheat',
-            borderLeftStyle: 'solid',
           }}
         >
           <Typography.Text style={{ fontSize: '24px', fontWeight: 'bold' }}>
@@ -159,6 +135,30 @@ export default function Payment(props) {
               )}
             </div>
           </div>
+        </div>
+        <div
+          style={{
+            flex: 1,
+            display: 'flex',
+            padding: '20px',
+            paddingLeft: '50px',
+            flexDirection: 'column',
+            borderLeftWidth: '2px',
+            borderColor: 'wheat',
+            borderLeftStyle: 'solid',
+          }}
+        >
+          <Typography.Text
+            style={{
+              fontSize: '24px',
+              fontWeight: 'bold',
+              justifySelf: 'flex-start',
+            }}
+          >
+            Phương thức thanh toán
+          </Typography.Text>
+          <ListMethod choosenID={methodID} setID={setMethodID} />
+          <MethodContent methodID={methodID} nMonth={nMonth} packageID={id} />
         </div>
       </div>
     </div>

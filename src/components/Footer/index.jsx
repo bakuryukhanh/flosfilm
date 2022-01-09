@@ -39,7 +39,7 @@ export default function Footer(props) {
           />
         </Col>
         <Col span={16} style={{ background: '#2e2e2e', padding: '30px 30px' }}>
-          <Row>
+          <Row justify="space-around">
             <Col span={6}>
               <Typography.Title level={5}>Sản phẩm</Typography.Title>
               <br />
@@ -51,7 +51,7 @@ export default function Footer(props) {
               <br />
               <Typography.Text>Phim hot</Typography.Text>
             </Col>
-            <Col span={12}>
+            <Col span={6}>
               <Typography.Title level={5}>Quy định</Typography.Title>
               <br />
               <Typography.Text>Quy chế sử dụng dịch vụ</Typography.Text>

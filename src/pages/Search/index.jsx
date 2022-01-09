@@ -105,7 +105,6 @@ const SearchPage = (_props) => {
                   image={item.wallpaper}
                   thumbImage={item.thumb}
                   view="2k"
-                  percent={0}
                   type={item.categoryList[0].name}
                   style={{ minHeight: '400px' }}
                   slug={item.id}

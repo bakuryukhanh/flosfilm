@@ -38,6 +38,7 @@ export const requestFilmDetails = (slug) => {
     directerList: item.directerList,
     totalView: item.totalView,
     rateTime: item.rateTime,
+    country: item.country,
   };
 };
 export const requestRelevantFilms = () => {

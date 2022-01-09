@@ -8,24 +8,28 @@ import {
   requestHollywoodFilms,
   requestWatchedFilms,
 } from '@/service';
+import PlayButtonPng from '@/assets/PlayButton.png';
+import { Link } from 'umi';
 
 const fakeDataCarousel = [
   {
-    vnName: 'Hiệp sĩ xanh',
-    enName: 'The green knight',
+    id: 'residentevil',
+    vnName: 'Vùng Đất Quỷ Dữ',
+    enName: 'Resident Evil',
     description:
-      'Muốn chứng minh giá trị bản thân, Gawain, người cháu liều lĩnh và cứng đầu của vua Arthur, đã chấp nhận bước vào cuộc hành trình đối đầu với Hiệp sĩ Xanh bất tử.',
+      'Bộ phim Vùng Đất Quỷ Dữ: Quỷ Dữ Trỗi Dậy có nội dung từng là ngôi nhà thịnh vượng của tập đoàn dược phẩm khổng lồ Umbrella, thành phố Raccoon hiện là một thị trấn miền Trung Tây đang hấp hối.',
     type: 'Hành động',
     time: '2 giờ 5 phút',
     rate: 4.5,
     image:
-      'https://ghienreview.com/wp-content/uploads/2021/08/Ghien-review-The-Green-Knight-01.jpg',
+      'https://m.media-amazon.com/images/M/MV5BNjRmMDUxODctYjg3NC00NDRhLWJhZWItMjg0OTZkMDBjNWUxXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_FMjpg_UX1080_.jpg',
     thumbImage:
-      'https://cdn.shopify.com/s/files/1/0513/0613/5747/products/TheGreenKnight9_2376b752-8cc0-4ba4-8ee5-010e750d0995_530x@2x.jpg?v=1628091452',
+      'https://www.parisbeacon.com/wp-content/uploads/2021/11/61F1B67B-F2B9-4629-AF1E-511060DDB9DA.jpeg',
     view: '2k',
     percent: 30,
   },
   {
+    id: 'encanto',
     vnName: 'Encanto: Vùng Đất Thần Kỳ',
     enName: 'Encanto',
     description:
@@ -43,13 +47,16 @@ const fakeDataCarousel = [
 ];
 
 const CarouselCard = (props) => {
-  const { vnName, enName, description, type, time, rate, image } = props;
+  const { vnName, enName, description, type, time, rate, image, id } = props;
   return (
     <div className={styles['carousel-card']}>
-      <div
+      <Row
         className={styles.background}
         style={{ backgroundImage: `url(${image})` }}
       />
+      <Link to={`/film-detail/${id}`} className={styles['play-button']}>
+        <img src={PlayButtonPng} />
+      </Link>
       <Row>
         <Col span={16} />
         <Col span={8} style={{ textAlign: 'left' }}>
@@ -156,6 +163,7 @@ const HomePage = (_props) => {
           customIndicators(a, b, c, d, fakeDataCarousel)
         }
         showArrows={false}
+        showStatus={false}
       >
         {fakeDataCarousel.map((item) => {
           return <CarouselCard {...item} />;

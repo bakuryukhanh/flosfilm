@@ -7,14 +7,40 @@
   align-items: center;
   flex-direction: row-reverse;
   position: relative;
+  z-index: 2;
   & .background {
-    filter: blur(2px);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     inset: 0;
+    z-index: -1;
+    &:after {
+      content: '';
+      background: linear-gradient(
+        270deg,
+        #000000 -2.92%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+  }
+  .play-button {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    object-fit: contain;
+    left: 100px;
+    top: 50%;
+    cursor: pointer;
+    z-index: 10;
+    :hover {
+      transform: scale(1.1);
+    }
   }
 }
+
 .indicator {
   width: 220px;
   height: 120px;
@@ -28,5 +54,6 @@
   transition: all 0.25s ease;
 }
 .film-section {
-  padding: 30px 0;
+  padding: 30px 15px;
+  max-width: 100%;
 }

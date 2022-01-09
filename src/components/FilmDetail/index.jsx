@@ -14,7 +14,12 @@ const CastCard = ({ castInfo }) => {
   return (
     <Col span={4} style={{ textAlign: 'center' }}>
       <div
-        style={{ display: 'flex', justifyContent: 'center', paddingBottom: 10 }}
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          paddingBottom: 10,
+          objectFit: 'cover',
+        }}
       >
         <Image
           width={50}
@@ -78,6 +83,7 @@ const CastCarousel = ({ castList }) => {
       arrows
       //prevArrow={<PrevArrow />}
       nextArrow={<NextArrow />}
+      dots={false}
     >
       {tmpArr.map((arr, index1) => (
         <Row
@@ -105,8 +111,9 @@ export default function FilmDetail({
   castList,
   directerList,
   totalView,
+  country,
 }) {
-  const { slug } = useParams();
+  console.log(country);
   return (
     <div>
       <Title className={styles.title}>{vnName}</Title>
@@ -141,7 +148,7 @@ export default function FilmDetail({
       <div className={styles.detail}>
         <Text>
           <b>Thời lượng: </b>
-          {time}
+          {time} phút
         </Text>
       </div>
       <div className={styles.detail}>
@@ -153,7 +160,7 @@ export default function FilmDetail({
       <div className={styles.detail}>
         <Text>
           <b>Quốc gia: </b>
-          {}
+          {country?.name}
         </Text>
       </div>
       <div className={styles.detail}>

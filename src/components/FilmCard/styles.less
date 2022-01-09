@@ -1,5 +1,6 @@
 .filmcard {
   width: 100%;
+  max-width: 100%;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -9,7 +10,23 @@
   padding: 20px 20px;
   border-radius: 10px;
   cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
   &:hover {
     transform: scale(1.05);
+  }
+  & .background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    &:after {
+      content: '';
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
   }
 }

@@ -1,16 +1,16 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './styles.less';
 import { Input, Row, Col, Image, Typography } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import { requestSearchFilms } from '@/service';
 import { history, Link } from 'umi';
 
-const FilmSearchList = ({ films }) => {
+const FilmSearchList = ({ films, resetSearch }) => {
   return (
     <div className={styles['search-list']}>
       {films.map((film) => {
         return (
-          <Link to={`/film-detail/${film.id}`}>
+          <Link to={`/film-detail/${film.id}`} onClick={() => resetSearch()}>
             <Row className={styles['result-row']} align="middle">
               <Col span={6}>
                 <Image
@@ -48,21 +48,32 @@ const FilmSearchList = ({ films }) => {
   );
 };
 
-const SearchInput = (props) => {
+const SearchInput = () => {
   const [films, setFilms] = useState([]);
+  const [inputValue, setInputValue] = useState('');
+
+  useEffect(() => {
+    if (inputValue.length === 0) {
+      setFilms([]);
+    } else {
+      const result = requestSearchFilms(inputValue);
+      setFilms(result);
+    }
+  }, [inputValue]);
+
   const handleOnChange = (e) => {
     const value = e.target.value;
-    if (value.length === 0) {
-      setFilms([]);
-      return;
-    }
-    const result = requestSearchFilms(value);
-    setFilms(result);
+    setInputValue(value);
   };
+
   const handleOnEnter = (e) => {
     const value = e.target.value;
     history.push(`/search/${value}`);
     setFilms([]);
+  };
+
+  const handleResetSearch = () => {
+    setInputValue('');
   };
   return (
     <div className={styles['search-container']}>
@@ -72,10 +83,11 @@ const SearchInput = (props) => {
         style={{ borderRadius: '5px' }}
         onChange={handleOnChange}
         onPressEnter={handleOnEnter}
+        value={inputValue}
       />
       {films.length != 0 && (
         <div className={styles['search-result']}>
-          <FilmSearchList films={films} />
+          <FilmSearchList films={films} resetSearch={handleResetSearch} />
         </div>
       )}
     </div>

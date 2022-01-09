@@ -244,13 +244,8 @@ export default function DetailPage() {
         }}
       >
         <div
-          style={{
-            position: 'absolute',
-            filter: 'blur(3px)',
-            inset: '0',
-            backgroundImage: `url(${filmDetail.image})`,
-            backgroundSize: 'cover',
-          }}
+          className={styles.background}
+          style={{ backgroundImage: `url(${filmDetail.image})` }}
         />
         <div className="container">
           <Row style={{ paddingTop: '8rem', paddingBottom: '2rem' }}>
