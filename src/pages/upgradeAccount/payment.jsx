@@ -252,7 +252,12 @@ const VisaContent = ({ nMonth, packageID }) => {
       setCwErr('Vui lòng nhập CVV/CVC2');
       return;
     }
-    if (number == 1 && name == 2 && expireDate == 3 && cw == 4) {
+    if (
+      number == '12345678910' &&
+      name == 'Tran Van Khanh' &&
+      expireDate == '06/26' &&
+      cw == '012'
+    ) {
       notification.open({
         message: 'Thanh toán thành công',
         description: 'Vui lòng kiểm tra lại thông tin và hoàn tất.',

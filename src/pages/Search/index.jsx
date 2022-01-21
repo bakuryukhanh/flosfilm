@@ -30,13 +30,14 @@ const SearchPage = (_props) => {
   return (
     <div className="container">
       <div style={{ marginTop: '140px' }}>
-        <Row gutter={[20, 20]}>
+        <Row gutter={30}>
           <Col
-            span={6}
+            span={5}
             style={{
               background: '#4b4b4b',
               borderRadius: '5px',
               padding: '20px 10px',
+              marginRight: '30px',
             }}
           >
             <Typography.Title level={3} style={{ color: '#ff8a00' }}>
@@ -90,7 +91,7 @@ const SearchPage = (_props) => {
             style={{
               background: '#4b4b4b',
               borderRadius: '5px',
-              padding: '20px 10px',
+              padding: '20px 30px',
             }}
           >
             <Typography.Title level={3} style={{ color: '#ff8a00' }}>
@@ -113,9 +114,9 @@ const SearchPage = (_props) => {
                 />
               ))}
             </div>
-            <Typography.Title level={4} style={{ marginTop: '50px' }}>
-              Diễn viên
-            </Typography.Title>
+            {/* <Typography.Title level={4} style={{ marginTop: '50px' }}> */}
+            {/*   Diễn viên */}
+            {/* </Typography.Title> */}
           </Col>
         </Row>
       </div>

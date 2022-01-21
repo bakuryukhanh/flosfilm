@@ -1,22 +1,48 @@
 import { SearchOutlined, UserOutlined } from '@ant-design/icons/lib/icons';
-import { Col, Avatar, Input, Row, Typography, Menu, Dropdown } from 'antd';
+import {
+  Col,
+  Avatar,
+  Input,
+  Row,
+  Typography,
+  Menu,
+  Dropdown,
+  Badge,
+} from 'antd';
 import { Link, NavLink } from 'umi';
 import styles from './styles.less';
 import './styles.less';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState } from 'react';
 import SearchInput from './components/SearchBar';
+import { VipSvg } from '@/assets/Vip';
 
 export default function Header(props) {
   const [isLogin, setIsLogin] = useState(
     localStorage.getItem('isLogin') == 'true',
   );
+
+  const [isVip, setIsVip] = useState(localStorage.getItem('isVip'));
   const userName = localStorage.getItem('userName');
 
   function handleLogout() {
     setIsLogin(false);
     localStorage.setItem('isLogin', false);
   }
+
+  const VipAvatar = () => {
+    return (
+      <div style={{ position: 'relative' }}>
+        <Avatar
+          icon={<UserOutlined />}
+          style={{ background: 'transparent', border: 'solid 1.5px white' }}
+        />
+        <div style={{ position: 'absolute', top: '-20px', left: '30%' }}>
+          <VipSvg />
+        </div>
+      </div>
+    );
+  };
 
   const menu = (
     <Menu>
@@ -92,7 +118,11 @@ export default function Header(props) {
               <Dropdown overlay={menu} placement="bottomRight" arrow>
                 <Row gutter={[20, 0]} align="middle" justify="end">
                   <Col span={8}>
-                    <Avatar icon={<UserOutlined />} size={32} />
+                    {!isVip ? (
+                      <Avatar icon={<UserOutlined />} size={32} />
+                    ) : (
+                      <VipAvatar />
+                    )}
                   </Col>
                   <Col span={16} style={{ textAlign: 'right' }}>
                     <Typography.Text strong>{userName}</Typography.Text>

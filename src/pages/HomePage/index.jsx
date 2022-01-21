@@ -44,6 +44,27 @@ const fakeDataCarousel = [
     view: '5k',
     percent: 50,
   },
+  {
+    id: 'ticktickboom',
+    vnName: 'Giai điệu cuộc sống',
+    enName: 'tick, tick...BOOM!',
+    // "poster": "https://m.media-amazon.com/images/M/MV5BMDZmMGY0ZGItNjQyNC00MTFkLTk2NDctMGU1YTZkMzk2YTEwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UY720_.jpg",
+    image:
+      'https://m.media-amazon.com/images/M/MV5BNjg0MmJhNjUtNGJiMC00OTZjLTllYmEtODY2OGVjNGViNDMyXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1280_.jpg',
+    thumbImage:
+      'https://m.media-amazon.com/images/M/MV5BZmMyMmE0M2UtN2E2MC00YzVmLTkwODgtOTVhYjVlOTBhY2RjXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1013_.jpg',
+    description:
+      'Sắp bước sang tuổi 30, một nhà soạn kịch triển vọng xoay xở với tình yêu, tình bạn và áp lực phải tạo ra một tác phẩm tuyệt vời trước khi thời gian dần cạn.',
+    episode: 1,
+    view: '4 triệu',
+    type: 'Tâm lý',
+    viewBymonth: '7k',
+    viewByweek: 5001,
+    rate: 4.0,
+    rateTime: '100 nghìn',
+    year: 2021,
+    time: 107,
+  },
 ];
 
 const CarouselCard = (props) => {
@@ -164,6 +185,10 @@ const HomePage = (_props) => {
         }
         showArrows={false}
         showStatus={false}
+        autoPlay
+        infiniteLoop
+        interval={3000}
+        stopOnHover
       >
         {fakeDataCarousel.map((item) => {
           return <CarouselCard {...item} />;

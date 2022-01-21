@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PaymentSteps from '../../components/paymentSteps/index';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { useParams } from 'umi';
@@ -13,6 +13,9 @@ export default function Result(props) {
   const today = new Date();
   const expireDate = today.setMonth(today.getMonth() + parseInt(nMonth));
   const output = new Date(expireDate);
+  useEffect(() => {
+    localStorage.setItem('isVip', true);
+  }, []);
   return (
     <div
       style={{
